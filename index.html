@@ -6,6 +6,9 @@
 
 	<!--  *****   Link To Font Awsome Icons   *****  -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
@@ -35,19 +38,16 @@
 						<!--  *****  Card 1 Starts  *****  -->
 			<div class="item cad"
 			  data-project='{
-				"title":"Projekt XYZ",
+				"title":"Projekt XYZ1",
 				"desc":"Opis projektu…",
 				"content":[
 				  {"type":"image","src":"design2.jpg"},
+				  {"type":"youtube","id":"ScMzIvxBSi4"},
 				  {"type":"video","src":"video.mp4"},
 				  {"type":"image","src":"design3.jpg"},
 				  {"type":"text","text":"Dodatkowy opis pod galerią"}
 				]
 			  }'>
-
-
-
-
 			<img src="design3.jpg" alt="Car Configurator">
 
 			  <div class="overlay">
@@ -62,10 +62,11 @@
 						<!--  *****  Card 1 Starts  *****  -->
 			<div class="item logo"
 			  data-project='{
-				"title":"Projekt XYZ",
+				"title":"Projekt XYZ2",
 				"desc":"Opis projektu…",
 				"content":[
 				  {"type":"image","src":"design2.jpg"},
+				  {"type":"text","text":"Dodatkowy opis pod galerią2"},
 				  {"type":"video","src":"https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"},
 				  {"type":"image","src":"design1.jpg"},
 				  {"type":"text","text":"Dodatkowy opis pod galerią"}
@@ -265,7 +266,7 @@ $gallery.imagesLoaded(function () {
 // =======================
 var $galleryContainer = $('.gallery').isotope({
   itemSelector: '.item',
-  layoutMode: 'fitRows'
+  //layoutMode: 'fitRows'
 });
 
 $('.button-group .button').on('click', function(){
@@ -288,10 +289,10 @@ $('.gallery').on('click', '.overlay a', function (e) {
 // =======================
 // OPEN POPUP
 // =======================
-$('.gallery').on('click', '.item', function(){
+$('.gallery').on('click', '.item', function () {
 
   const raw = $(this).attr('data-project');
-  if(!raw) return;
+  if (!raw) return;
 
   const project = JSON.parse(raw);
 
@@ -301,32 +302,56 @@ $('.gallery').on('click', '.item', function(){
 
   project.content.forEach(block => {
 
-	if (block.type === 'video') {
-	  $('#popupGallery').append(`
-		<video class="popup-video-local" controls preload="metadata">
-		  <source src="${block.src}" type="video/mp4">
-		</video>
-	  `);
-	}
-
-
-    if(block.type === 'image'){
+    // LOCAL MP4
+    if (block.type === 'video') {
       $('#popupGallery').append(`
-        <img src="${block.src}" class="popup-image">
+        <video class="popup-video-local" controls preload="metadata">
+          <source src="${block.src}" type="video/mp4">
+        </video>
       `);
     }
 
-    if(block.type === 'text'){
+    // YOUTUBE (NO SRC YET!)
+    if (block.type === 'youtube') {
       $('#popupGallery').append(`
-        <p class="popup-text">${block.text}</p>
+        <div class="popup-video">
+          <iframe
+		  	data-src="https://www.youtube.com/embed/${block.id}?autoplay=1&mute=1"
+			referrerpolicy="strict-origin-when-cross-origin"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       `);
+    }
+
+    if (block.type === 'image') {
+      $('#popupGallery').append(`<img src="${block.src}" class="popup-image">`);
+    }
+
+    if (block.type === 'text') {
+      $('#popupGallery').append(`<p class="popup-text">${block.text}</p>`);
     }
 
   });
 
+  // ⬇️ NAJPIERW OTWIERAMY POPUP
   $('#projectPopup').addClass('active');
   $('body').addClass('popup-open');
+
+  // ⬇️ DOPIERO TERAZ AKTYWUJEMY YOUTUBE
+  requestAnimationFrame(() => {
+    $('#popupGallery iframe').each(function () {
+      const src = $(this).data('src');
+      if (src) $(this).attr('src', src);
+    });
+  });
+
 });
+
+
+
 
 // =======================
 // CLOSE POPUP (X)
