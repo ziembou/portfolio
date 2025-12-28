@@ -1,3 +1,9 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -29,10 +35,16 @@ body{
 .nav-inner{
   max-width: 1400px;
   margin: 0 auto;
-  padding: 16px 8%;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .nav-inner {
+    padding: 16px 8%;
+  }
 }
 
 .nav-logo{
@@ -74,9 +86,29 @@ body{
 
 .portfolio{
   width: 100%;
-  padding: 30px 8%;
-  background-color: var(--body-clr);
+  padding: 30px 16px; /* mobile-safe */
 }
+
+@media (min-width: 768px) {
+  .portfolio {
+    padding: 40px 8%;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-bg-text {
+    font-size: 64px;
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .about-bg-text {
+    font-size: 72px;
+    left: -40px;
+  }
+}
+
+
 
 .portfolio-bg-text {
   font-size: 100px;
