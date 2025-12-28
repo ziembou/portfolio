@@ -84,7 +84,7 @@
 			<button class="button" data-filter=".photogrammetry">Photogrammetry</button>
 			<button class="button" data-filter=".unreal">Unreal</button>
 			<button class="button" data-filter=".photography">Photography</button>			
-			<button class="button" data-filter=".3dprint">3D Print</button>
+			<button class="button" data-filter=".print3d">3D Print</button>
 			<button class="button" data-filter=".scripting">Scripting</button>
 		</div>
 		<!--  *****  Buttons Section Ends  *****  -->
@@ -230,7 +230,7 @@
 			</div>	
 			<!--  *****  Fresso ENDS  *****  -->
 			<!--  *****  Druk3D Starts  *****  -->
-			<div class="item modelling3d 3dprint"
+			<div class="item modelling3d print3d"
 			  data-project='{
 				"title":"Druk 3D",
 				"desc":"Opis projektu…",
@@ -367,17 +367,16 @@
 	</main>
 
 </section>
-<div class="project-popup" id="projectPopup">
-	<span class="close">&times;</span>
+<div id="projectPopup" class="project-popup">
   <div class="popup-inner">
-    
+    <span class="close">×</span>
 
     <h2 id="popupTitle"></h2>
     <p id="popupDesc"></p>
-
-    <div class="popup-gallery" id="popupGallery"></div>
+    <div id="popupGallery"></div>
   </div>
 </div>
+
 <footer class="site-footer" id="contact">
   <div class="footer-inner">
 
@@ -432,24 +431,18 @@ $gallery.imagesLoaded(function () {
     layoutMode: 'masonry',
     masonry: {
       columnWidth: '.item',
-      gutter: 0
+      percentPosition: true
     }
   });
 });
 
-// ISOTOPE
-// =======================
-var $galleryContainer = $('.gallery').isotope({
-  itemSelector: '.item',
-  //layoutMode: 'fitRows'
-});
 
 $('.button-group .button').on('click', function(){
   $('.button-group .button').removeClass('active');
   $(this).addClass('active');
 
   var value = $(this).attr('data-filter');
-  $galleryContainer.isotope({ filter: value });
+  $gallery.isotope({ filter: value });
 });
 
 // =======================
