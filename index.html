@@ -14,20 +14,78 @@
 	<title>Portfolio</title>
 </head>
 <body>
-<section class="portfolio">
-	
-	<header class="section-head">
-		<h1>Some Of My Latest Works</h1>
-	</header>
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-logo">.marcin</div>
 
+    <ul class="nav-links">
+      <li><a href="#portfolio" class="active">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<section class="about creative" id="about">
+  <div class="about-bg-text">.about</div>
+
+  <div class="about-inner">
+
+    <div class="about-image">
+      <img src="img/Generated Image December 28, 2025 - 4_49PM.png" alt="Your photo">
+    </div>
+
+    <div class="about-content">
+      <h2>
+        I design & build<br>
+        <span>visual experiences</span>
+      </h2>
+
+      <p class="about-lead">
+        Designer & creator focused on strong visuals, interaction
+        and clean technical execution.
+      </p>
+
+      <p>
+        My work connects <strong>design</strong>, <strong>CAD</strong> and
+        <strong>digital experiences</strong>.
+        I like minimal forms, bold typography and details that matter.
+      </p>
+
+      <a href="#portfolio" class="about-btn">
+        View Portfolio →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+	<div class="portfolio-bg-text">.portfolio</div>
+	
+	
+	<!--
+	<header class="section-head">
+		<h1>Portfolio</h1>
+	</header>
+	-->
+	
+ 	
 	<main class="mainContainer">
+		
 		
 		<!--  *****  Buttons Section Starts  *****  -->
 		<div class="button-group">
 			<button class="button active" data-filter="*">All</button>
-			<button class="button" data-filter=".design">Design</button>
-		<button class="button" data-filter=".cad">CAD</button>
-			<button class="button" data-filter=".logo">Logo</button>
+			<button class="button" data-filter=".modelling3d">3D modelling</button>
+			<button class="button" data-filter=".cad">3D CAD</button>
+			<button class="button" data-filter=".product">3D Visualisation</button>
+			<button class="button" data-filter=".animation">3D Animation</button>
+			<button class="button" data-filter=".rigging">3D Rigging</button>
+			<button class="button" data-filter=".photogrammetry">Photogrammetry</button>
+			<button class="button" data-filter=".unreal">Unreal</button>
+			<button class="button" data-filter=".photography">Photography</button>			
+			<button class="button" data-filter=".3dprint">3D Print</button>
+			<button class="button" data-filter=".scripting">Scripting</button>
 		</div>
 		<!--  *****  Buttons Section Ends  *****  -->
 
@@ -36,19 +94,18 @@
 			
 			<!--  *****  Card 1 ENDS  *****  -->
 						<!--  *****  Card 1 Starts  *****  -->
-			<div class="item cad"
+			<div class="item modelling3d product"
 			  data-project='{
-				"title":"Projekt XYZ1",
-				"desc":"Opis projektu…",
+				"title":"Quantuum",
+				"desc":"Tools used: Blender 3D, Plasticity",
 				"content":[
-				  {"type":"image","src":"design2.jpg"},
-				  {"type":"youtube","id":"ScMzIvxBSi4"},
-				  {"type":"video","src":"video.mp4"},
-				  {"type":"image","src":"design3.jpg"},
+				  {"type":"image","src":"img/Quantum-sklad-1RLLT-02prev.jpg"},
+				  {"type":"image","src":"img/Quantum-sklad-3RLLT-02prev.jpg"},
+				  {"type":"image","src":"img/Quantum-sklad-15prev2.jpg"},
 				  {"type":"text","text":"Dodatkowy opis pod galerią"}
 				]
 			  }'>
-			<img src="design3.jpg" alt="Car Configurator">
+			<img src="img/Quantum-sklad-1RLLT-02prev.jpg" alt="Car Configurator">
 
 			  <div class="overlay">
 				<a href="#" class="open-project">VIEW MORE1</a>
@@ -58,88 +115,172 @@
 			</div>
 			
 			<!--  *****  Card 1 ENDS  *****  -->
-			<!--  *****  Card 1 ENDS  *****  -->
-						<!--  *****  Card 1 Starts  *****  -->
-			<div class="item logo"
+			<!--  *****  XTZ 750 engine Starts  *****  -->
+			<div class="item cad modelling3d"
 			  data-project='{
-				"title":"Projekt XYZ2",
-				"desc":"Opis projektu…",
+				"title":"XTZ 750 engine",
+				"desc":"Tools used: Blender 3D, Plasticity (CAD)",
 				"content":[
-				  {"type":"image","src":"design2.jpg"},
+				  {"type":"image","src":"img/SILNIK-02.jpg"},
+				  {"type":"image","src":"img/xtz-750-02.jpg"},
+		    	  {"type":"image","src":"img/xtz-750-03.jpg"},
+				  {"type":"image","src":"img/xtz-750-04.jpg"}
+				]
+			  }'>
+			<img src="img/SILNIK-02.jpg" alt="Car Configurator">
+			  <div class="overlay">
+				<a href="#" class="open-project">VIEW MORE1</a>
+			  </div>
+			</div>	
+			<!--  ***** XTZ 750 engine ENDS  *****  -->
+
+			<!--  *****  XTZ 750 MAIN Starts  *****  -->
+			<div class="item cad modelling3d animation unreal"
+			  data-project='{
+				"title":"XTZ 750",
+				"desc":"Tools used: Blender 3D, Plasticity (CAD), Substance Painter, Marmoset Toolbag, Affinity Photo, Affinity Designer, DaVinci Resolve ",
+				"content":[
+				  {"type":"youtube","id":"Q6PouMWAsWU"},
+				  {"type":"image","src":"img/xtz-750-01.jpg"}
+				]
+			  }'>
+			<img src="img/xtz-750-01.jpg" alt="Car Configurator">
+			  <div class="overlay">
+				<a href="#" class="open-project">VIEW MORE1</a>
+			  </div>
+			</div>
+			
+			<!--  ***** XTZ 750 MAIN ENDS  *****  -->
+			<!--  *****  Boston Starts  *****  -->
+			<div class="item modelling3d product"
+			  data-project='{
+				"title":"Boston sofa",
+				"desc":"Tools used: Blender 3D, Marmoset Toolbag",
+				"content":[
+				  {"type":"image","src":"img/Boston_01.jpg"},
 				  {"type":"text","text":"Dodatkowy opis pod galerią2"},
-				  {"type":"video","src":"https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"},
-				  {"type":"image","src":"design1.jpg"},
+				  {"type":"image","src":"img/Boston_01.jpg"},
 				  {"type":"text","text":"Dodatkowy opis pod galerią"}
 				]
 			  }'>
-
-
-
-
-			<img src="design2.jpg" alt="Car Configurator">
+			<img src="img/Boston_01.jpg" alt="Car Configurator">
 
 			  <div class="overlay">
 				<a href="#" class="open-project">VIEW MORE2</a>
-
 			  </div>
-
 			</div>
-			
-			<!--  *****  Card 1 ENDS  *****  -->
-						<!--  *****  Card 1 ENDS  *****  -->
-						<!--  *****  Card 1 Starts  *****  -->
-			<div class="item design"
+			<!--  *****  Boston ENDS  *****  -->
+
+			<!--  *****  Abandoned Starts  *****  -->
+			<div class="item modelling3d unreal animation"
 			  data-project='{
-				"title":"Projekt XYZ",
-				"desc":"Opis projektu…",
+				"title":"Abandoned",
+				"desc":"Tools used: Unreal Engine 5.4, Blender 3D, DaVinci Resolve",
 				"content":[
-				  {"type":"image","src":"design2.jpg"},
-				  {"type":"video","src":"video.mp4"},
+                  {"type":"image","src":"img/Abandoned-01.jpg"},
+				  {"type":"youtube","id":"rbMmR6LK60k"},
+                  {"type":"image","src":"img/Abandoned-02.jpg"},
+				  {"type":"image","src":"img/Abandoned-03.jpg"},
+				  {"type":"image","src":"img/Abandoned-04.jpg"}
+				]
+			  }'>
+			<img src="img/Abandoned-03.jpg" alt="Car Configurator">
+
+			  <div class="overlay">
+				<a href="#" class="open-project">VIEW MORE</a>
+			  </div>
+			</div>
+			<!--  *****  Abandoned ENDS  *****  -->
+
+			<!--  *****  TVP Starts  *****  -->
+			<div class="item animation"
+			  data-project='{
+				"title":"TVP abc jingles",
+				"desc":"Jingle animations for new branding TVP abc",
+				"content":[
+				  {"type":"image","src":"img/tvp-abc-01.jpg"},				  
+				  {"type":"youtube","id":"xdYkDlVZfFE"},
+				  {"type":"image","src":"img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg"},
 				  {"type":"image","src":"design1.jpg"},
 				  {"type":"text","text":"Dodatkowy opis pod galerią"}
 				]
 			  }'>
-
-
-
-
-			<img src="design2.jpg" alt="Car Configurator">
-
+			<img src="img/tvp-abc-01.jpg" alt="Car Configurator">
 			  <div class="overlay">
 				<a href="#" class="open-project">VIEW MORE3</a>
-
 			  </div>
-
-			</div>
-			
-			<!--  *****  Card 1 ENDS  *****  -->
-								<!--  *****  Card 1 Starts  *****  -->
-			<div class="item logo"
+			</div>	
+			<!--  *****  Tvp ENDS  *****  -->
+			<!--  *****  Fresso Starts  *****  -->
+			<div class="item product"
 			  data-project='{
-				"title":"Projekt XYZ",
+				"title":"Fresso Home",
 				"desc":"Opis projektu…",
 				"content":[
-				  {"type":"image","src":"design2.jpg"},
-				  {"type":"video","src":"https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"},
+				  {"type":"image","src":"img/Fersso-home-clean_zestawienie4.jpg"},
+				  {"type":"image","src":"img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg"},
 				  {"type":"image","src":"design1.jpg"},
 				  {"type":"text","text":"Dodatkowy opis pod galerią"}
 				]
 			  }'>
-
-
-
-
-			<img src="design2.jpg" alt="Car Configurator">
-
+			<img src="img/Fersso-home-clean_zestawienie4.jpg" alt="Car Configurator">
 			  <div class="overlay">
-				<a href="#" class="open-project">VIEW MORE2</a>
-
+				<a href="#" class="open-project">VIEW MORE3</a>
 			  </div>
-
-			</div>
-			
-			<!--  *****  Card 1 ENDS  *****  -->
-						<!--  *****  Card 1 ENDS  *****  -->
+			</div>	
+			<!--  *****  Fresso ENDS  *****  -->
+			<!--  *****  Druk3D Starts  *****  -->
+			<div class="item modelling3d 3dprint"
+			  data-project='{
+				"title":"Druk 3D",
+				"desc":"Opis projektu…",
+				"content":[
+				  {"type":"image","src":"img/Druk3d-01.jpg"},
+				  {"type":"image","src":"img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg"},
+				  {"type":"image","src":"design1.jpg"},
+				  {"type":"text","text":"Dodatkowy opis pod galerią"}
+				]
+			  }'>
+			<img src="img/Druk3d-01.jpg" alt="Car Configurator">
+			  <div class="overlay">
+				<a href="#" class="open-project">VIEW MORE3</a>
+			  </div>
+			</div>	
+			<!--  *****  Druk3D ENDS  *****  -->
+			<!--  *****  Tvp zwierzaki Starts  *****  -->
+			<div class="item animation modelling3d"
+			  data-project='{
+				"title":"Jingle animation for TVP ABC",
+				"desc":"Opis projektu…",
+				"content":[
+				  {"type":"image","src":"img/tvp-zwierzaki-czytaki-01.jpg"},
+                  {"type":"youtube","id":"4LEHF6KFZS0"},
+				  {"type":"image","src":"img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg"},
+				  {"type":"image","src":"design1.jpg"},
+				  {"type":"text","text":"Dodatkowy opis pod galerią"}
+				]
+			  }'>
+			<img src="img/tvp-zwierzaki-czytaki-01.jpg" alt="Car Configurator">
+			  <div class="overlay">
+				<a href="#" class="open-project">VIEW MORE3</a>
+			  </div>
+			</div>	
+			<!--  *****  Zwierzaki ENDS  *****  -->
+			<!--  *****  Subaru Foto Starts  *****  -->
+			<div class="item photography"
+			  data-project='{
+				"title":"Subaru Forester STI",
+				"desc":" drone panning shot",
+				"content":[
+				  {"type":"image","src":"img/photo-subaru-01.jpg"}
+				]
+			  }'>
+			<img src="img/photo-subaru-01.jpg" alt="Car Configurator">
+			  <div class="overlay">
+				<a href="#" class="open-project">VIEW MORE3</a>
+			  </div>
+			</div>	
+			<!--  *****  Zwierzaki ENDS  *****  -->	
 						<!--  *****  Card 1 Starts  *****  -->
 			<div class="item design"
 			  data-project='{
@@ -237,6 +378,40 @@
     <div class="popup-gallery" id="popupGallery"></div>
   </div>
 </div>
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:kontakt@email.com">kontakt@email.com</a></p>
+      <p>Location: Poland</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Social</h3>
+      <div class="footer-socials">
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>About</h3>
+      <p>
+        Portfolio showcasing design & development projects.
+        Built with HTML, CSS, JS. Author: Marcin Ziemba
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Your Name. All rights reserved.
+  </div>
+</footer>
+
 
 
 <!--   *****   JQuery Link   *****   -->
