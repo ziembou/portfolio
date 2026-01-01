@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--  *****   Link To Font Awsome Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+</head>
+<body>
+<!--
+<nav class="main-nav">
+  <div class="nav-inner">
+    <div class="nav-logo">.marcin</div>
+
+    <ul class="nav-links">
+      <li><a href="#portfolio" class="active">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+-->
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="logo">
+      <img src="img/logo-pro-fx.png" alt="logo pro-fx">
+    </div>
+
+    <nav class="nav">
+      <a href="#portfolio" data-i18n="menu.projects"></a>
+      <a href="#about"  data-i18n="menu.about"></a>
+      <a href="#contact"  data-i18n="menu.contact"></a>
+      <!--
+      <button data-lang="pl">PL</button>
+      <button data-lang="en">EN</button>
+      -->
+      <a href="javascript:void(0)" data-lang="pl">PL</a>
+      <a href="javascript:void(0)" data-lang="en">EN</a>
+    </nav>
+    <button class="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="hero">
+	<div class="hero-video">
+		<video class="hero-video-el" autoplay muted loop playsinline>
+			<source src="img/video-hero.mp4" type="video/mp4">
+		</video>
+	</div>
+  <div class="hero-text">
+    <h1 data-i18n="hero.title"></h1>
+    <p data-i18n="hero.subtitle"></p>
+  </div>
+
+</div>
+<section class="about creative" id="about">
+  <div class="about-bg-text">.ebałt</div>
+
+  <div class="about-inner">
+    <div class="about-image">
+      <img src="img/Generated Image December 28, 2025 - 4_49PM.png" alt="Your photo">
+    </div>
+
+    <div class="about-content">
+      <h2 data-i18n="about.title">
+        <br>
+      </h2>
+
+      <p class="about-lead" data-i18n="about.subtitle"></p>
+
+      <p>
+        My work connects <strong>design</strong>, <strong>CAD</strong> and
+        <strong>digital experiences</strong>.
+        I like minimal forms, bold typography and details that matter.
+      </p>
+
+      <a href="#portfolio" class="about-btn" data-i18n="links.seemore"></a>
+    </div>
+
+  </div>
+</section>
+
+<div class="scroll-watcher"></div>
+
+<section class="portfolio" id="portfolio">
+	<div class="portfolio-bg-text">.portfolio</div>
+	<!--
+	<header class="section-head">
+		<h1>Portfolio</h1>
+	</header>
+	-->
+	<main class="mainContainer">
+		<!--  *****  Buttons Section Starts  *****  -->
+		<div class="button-group">
+			<button class="button active" data-filter="*" data-i18n="filters.all"></button>
+			<button class="button" data-filter=".modelling3d" data-i18n="filters.modelling3d"></button>
+			<button class="button" data-filter=".cad">3D CAD</button>
+			<button class="button" data-filter=".rendering">Renders</button>
+			<button class="button" data-filter=".animation">3D Animation</button>
+			<button class="button" data-filter=".rigging">3D Rigging</button>
+			<button class="button" data-filter=".photogrammetry">Photogrammetry</button>
+			<button class="button" data-filter=".unreal">Unreal</button>
+			<button class="button" data-filter=".photography">Photography</button>			
+			<button class="button" data-filter=".print3d">3D Print</button>
+			<button class="button" data-filter=".scripting">Scripting</button>
+		</div>
+		<!--  *****  Buttons Section Ends  *****  -->
+
+		<!--  *****  Gallery Section Starts  *****  -->
+		<div class="gallery">
+			<div class="item cad modelling3d animation unreal" data-project-id="xtz-750-main">
+				<img src="img/xtz-750-01.jpg" alt="XTZ 750">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">XTZ 750</a>
+				</div>
+			</div>
+      <div class="item cad modelling3d animation unreal" data-project-id="xtz-750-engine">
+				<img src="img/thumb-Silnik-01.jpg" alt="XTZ 750">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">XTZ 750</a>
+				</div>
+			</div>
+			<div class="item rendering modelling3d" data-project-id="boston-sofa">
+				<img src="img/thumb-bostonsofa-01.jpg" alt="XTZ 750">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+				</div>
+			</div>
+			<div class="item animation modelling3d" data-project-id="abandoned">
+				<img src="img/Abandoned-01.jpg" alt="XTZ 750">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+				</div>
+			</div>
+			<div class="item photography" data-project-id="subaru-photo">
+				<img src="img/thumb-Subaru-01.jpg" alt="XTZ 750">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+				</div>
+			</div>
+      <div class="item rendering" data-project-id="lomza">
+				<img src="img/thumb-lomza-01.jpg" alt="Lomza beer">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+				</div>
+			</div>
+      <div class="item rendering" data-project-id="fresso-home">
+				<img src="img/thumb-fresso-01.jpg" alt="Fresso cosmetics">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+				</div>
+			</div>
+      <div class="item animation" data-project-id="alfa">
+				<img src="img/thumb-alfa-01.jpg" alt="Tvp alfa">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+				</div>
+			</div>
+      <div class="item rendering" data-project-id="tvp-abc">
+				<img src="img/tvp-abc-01.jpg" alt="Fresso cosmetics">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+				</div>
+			</div>
+      <div class="item rendering" data-project-id="quantuum">
+				<img src="img/Quantum-sklad-15prev2.jpg" alt="Quantuum">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+</section>
+<div id="projectPopup" class="project-popup">
+  <div class="popup-inner">
+    <span class="close">×</span>
+
+    <h2 id="popupTitle"></h2>
+    <p id="popupDesc"></p>
+    <div id="popupGallery"></div>
+  </div>
+</div>
+
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:kontakt@email.com">kontakt@email.com</a></p>
+      <p>Location: Poland</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Social</h3>
+      <div class="footer-socials">
+        <a href="https://www.youtube.com/@marcin3D-on8nk" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/marcin-ziemba-b87a8111a/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.artstation.com/mruczyslaw" aria-label="artstation"><i class="fab fa-artstation"></i></a>
+        <a href="https://www.behance.net/ziembou" aria-label="behance"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>About</h3>
+      <p>
+        Portfolio showcasing design & development projects.
+        Built with HTML, CSS, JS. Author: Marcin Ziemba
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Your Name. All rights reserved.
+  </div>
+</footer>
+
+
+
+<!--   *****   JQuery Link   *****   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script src="js/projects.js"></script>
+<script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+<script src="js/i18n.js"></script>
+<!--<script src="js/effects.js"></script> -->
+
+
+<!--   *****   Isotope Filter Link   *****  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script type="text/javascript">
+
+// Zmienna do isotope
+var $gallery = $('.gallery');
+
+//BELKA
+const header = document.querySelector(".site-header");
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".nav");
+
+addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", scrollY > innerHeight * 0.1);
+});
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});
+
+//DOPISAC JSON AUTHOR
+
+$gallery.imagesLoaded(function () {
+$gallery.isotope({
+	itemSelector: '.item',
+	layoutMode: 'masonry',
+	masonry: {
+	columnWidth: '.item',
+	percentPosition: true
+	}
+  });
+});
+
+$('.button-group .button').on('click', function(){
+$('.button-group .button').removeClass('active');
+$(this).addClass('active');
+
+var value = $(this).attr('data-filter');
+$gallery.isotope({ filter: value });
+});
+</script>
+</body>
+</html>

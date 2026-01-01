@@ -1,0 +1,25 @@
+{
+  "hero": {
+    "title": "Marcin Ziemba",
+    "subtitle": ""
+  },
+  "menu": {
+    "projects": "Projekty",
+    "about": "O mnie",
+    "contact": "Kontakt"
+  },
+  "portfolio": {
+    "seemore": "Zobacz więcej"
+  },
+  "filters": {
+    "all": "Wszystkie",
+    "modelling3d": "modelowanie 3D"
+  },
+  "about": {
+    "title": "Grafik 3D i animator",
+    "subtitle": " 17 lat doświadczenia games, products and interactive media."
+  },
+  "links": {
+    "seemore": "Zobacz więcej  →"
+  }
+}

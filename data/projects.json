@@ -1,0 +1,171 @@
+{
+  "xtz-750-engine": {
+    "title": "XTZ 750 engine",
+    "desc": "Tools used: Blender 3D, Plasticity (CAD)",
+    "content": [
+      { "type": "image", "src": "img/SILNIK-02.jpg" },
+      { "type": "image", "src": "img/xtz-750-02.jpg" },
+      { "type": "image", "src": "img/xtz-750-03.jpg" },
+      { "type": "image", "src": "img/xtz-750-04.jpg" }
+    ]
+  },
+
+  "xtz-750-main": {
+    "title": "XTZ 750",
+    "desc": "Tools used: Blender 3D, Plasticity (CAD), Substance Painter, Marmoset Toolbag, Affinity Photo, Affinity Designer, DaVinci Resolve",
+    "content": [
+      { "type": "youtube", "id": "Q6PouMWAsWU" },
+      { "type": "image", "src": "img/xtz-750-01.jpg" },
+      { "type": "image", "src": "img/xtz-750-05.jpg" }
+    ]
+  },
+
+  "boston-sofa": {
+    "title": "Boston sofa",
+    "desc": "Tools used: Blender 3D, Marmoset Toolbag a",
+    "content": [
+      {
+        "type": "text",
+        "text": "I create 3D assets and animations optimized for real-time engines, with a strong focus on Unreal Engine, gameplay readability and performance"
+      },
+      { "type": "image", "src": "img/thumb-bostonsofa-01.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią2" },
+      { "type": "image", "src": "img/Boston_01.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+    ]
+  },
+
+  "abandoned": {
+    "title": "Abandoned",
+    "desc": "Tools used: Unreal Engine 5.4, Blender 3D, DaVinci Resolve",
+    "content": [
+      { "type": "image", "src": "img/Abandoned-01.jpg" },
+      { "type": "youtube", "id": "rbMmR6LK60k" },
+      { "type": "image", "src": "img/Abandoned-02.jpg" },
+      { "type": "image", "src": "img/Abandoned-03.jpg" },
+      { "type": "image", "src": "img/Abandoned-04.jpg" }
+    ]
+  },
+
+  "tvp-abc": {
+    "title": {
+      "pl": "jingle dla TVP abc",
+      "en": "jingles for tv station TVP abc"
+    },
+    "desc": {
+      "pl": "Opis projektu…",
+      "en": "Project description"
+    },
+    "content": [
+      { "type": "image", "src": "img/tvp-abc-01.jpg" },
+      { "type": "youtube", "id": "xdYkDlVZfFE" },
+      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
+      { "type": "image", "src": "design1.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+    ]
+  },
+
+  "fresso-home": {
+    "title": {
+      "pl": "jingle dla TVP abc",
+      "en": "jingles for tv station TVP abc"
+    },
+    "desc": {
+      "pl": "Opis projektu…",
+      "en": "Project description"
+    },
+    "content": [
+      { "type": "image", "src": "img/Fersso-home-clean_zestawienie4.jpg" },
+      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
+      { "type": "image", "src": "design1.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+    ]
+  },
+
+  "quantuum": {
+    "title": {
+      "pl": "jingle dla TVP abc",
+      "en": "jingles for tv station TVP abc"
+    },
+    "desc": {
+      "pl": "Opis projektu…",
+      "en": "Project description"
+    },
+    "content": [
+      { "type": "image", "src": "img/Quantum-sklad-1RLLT-02prev.jpg" },
+      { "type": "image", "src": "img/Quantum-sklad-3RLLT-02prev.jpg" },
+      { "type": "image", "src": "img/Quantum-sklad-15prev2.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+    ]
+  },
+
+  "lomza": {
+    "title": {
+      "pl": "Łomża",
+      "en": "Loooomza"
+    },
+    "desc": {
+      "pl": "Narzedzia użyte",
+      "en": "Tools used:"
+    },
+    "content": [
+      { "type": "image", "src": "img/Quantum-sklad-1RLLT-02prev.jpg" },
+      { "type": "image", "src": "img/Quantum-sklad-3RLLT-02prev.jpg" },
+      { "type": "image", "src": "img/Quantum-sklad-15prev2.jpg" },
+      { "type": "text", "text": {
+          "pl": "Dodatkowy opis pod galerią",
+          "en": "english text below"
+        }
+      }
+    ]
+  },
+
+  "alfa": {
+    "title": "Alfa",
+    "desc": "Tools used: Blender 3D, Plasticity",
+    "content": [
+      { "type": "image", "src": "img/Quantum-sklad-1RLLT-02prev.jpg" },
+      { "type": "image", "src": "img/Quantum-sklad-3RLLT-02prev.jpg" },
+      { "type": "image", "src": "img/Quantum-sklad-15prev2.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+    ]
+  },
+
+  "druk-3d": {
+    "title": "Druk 3D",
+    "desc": "Opis projektu…",
+    "content": [
+      { "type": "image", "src": "img/Druk3d-01.jpg" },
+      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
+      { "type": "image", "src": "design1.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+    ]
+  },
+
+  "tvp-zwierzaki": {
+    "title": "Jingle animation for TVP ABC",
+    "desc": "Opis projektu…",
+    "content": [
+      { "type": "image", "src": "img/tvp-zwierzaki-czytaki-01.jpg" },
+      { "type": "youtube", "id": "4LEHF6KFZS0" },
+      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
+      { "type": "image", "src": "design1.jpg" },
+      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+    ]
+  },
+
+  "subaru-photo": {
+   "title": {
+      "pl": "Łomża",
+      "en": "Loooomza"
+    },
+    "desc": {
+      "pl": "Narzedzia użyte",
+      "en": "Tools used:"
+    },
+    "content": [
+      { "type": "image", "src": "img/photo-subaru-01.jpg" },
+      { "type": "youtube", "id": "npxLpAC0Ovs" }
+    ]
+  }
+}
