@@ -11,33 +11,67 @@
   },
 
   "xtz-750-main": {
-    "title": "XTZ 750",
-    "desc": "Tools used: Blender 3D, Plasticity (CAD), Substance Painter, Marmoset Toolbag, Affinity Photo, Affinity Designer, DaVinci Resolve",
+    "title": {
+      "pl": "Yamaha XTZ 750 ",
+      "en": "Yamaha XTZ 750 "
+    },
+    "desc": {
+      "pl": "Prywatny projekt z szerokim zakresem, którego celem była nauka modelowania CAD w Plasticity, teksturowania w Blender 3D oraz interakcja całości w Unreal Engine.",
+      "en": "Project description"
+    },
     "content": [
-      { "type": "youtube", "id": "Q6PouMWAsWU" },
       { "type": "image", "src": "img/xtz-750-01.jpg" },
-      { "type": "image", "src": "img/xtz-750-05.jpg" }
+      { "type": "youtube", "id": "Q6PouMWAsWU" },
+      { "type": "image", "src": "img/portfolio-xtz-750-01.jpg" },
+      { "type": "image", "src": "img/portfolio-xtz-750-02.jpg" },
+      { "type": "image", "src": "img/portfolio-xtz-750-03.jpg" },
+      { "type": "image", "src": "img/portfolio-xtz-750-04.jpg" },
+      { "type": "image", "src": "img/portfolio-xtz-750-05.jpg" },
+      { "type": "image", "src": "img/portfolio-xtz-750-07.jpg" },
+      { "type": "image", "src": "img/portfolio-xtz-750-08.jpg" },
+      { "type": "image", "src": "img/portfolio-xtz-750-09.jpg" },
+      {
+        "type": "compare",
+        "labelLeft": "Wireframe",
+        "labelRight": "Render",
+        "before": "img/compare-xtz-750-A.jpg",
+        "after": "img/compare-xtz-750-B.jpg"
+      }
     ]
   },
 
   "boston-sofa": {
-    "title": "Boston sofa",
-    "desc": "Tools used: Blender 3D, Marmoset Toolbag a",
+    "title": {
+      "pl": "Boston Sofa - renderingi dla salonu mebli skórzanych",
+      "en": "Boston Sofa - leather furniture showroom"
+    },
+    "desc": {
+      "pl": "Dla klienta przygotowane zostały modele 3D mebli skórzanych w wariacjach jedno, dwu i trzy-osobowych. Całość wykonana w Blender 3D oraz Marmoset Toolbag. Aby zachować poprawne proporcje mebli, użyta została technika fotogrametrii, która posłużyła jako referencja dla modelowania 3D foteli oraz sof. Priorytetem była dbałość o szczegóły oraz poprawną topologię siatki",
+      "en": "Project description"
+    },
     "content": [
-      {
-        "type": "text",
-        "text": "I create 3D assets and animations optimized for real-time engines, with a strong focus on Unreal Engine, gameplay readability and performance"
-      },
-      { "type": "image", "src": "img/thumb-bostonsofa-01.jpg" },
-      { "type": "text", "text": "Dodatkowy opis pod galerią2" },
       { "type": "image", "src": "img/Boston_01.jpg" },
+      { "type": "image", "src": "img/thumb-bostonsofa-01.jpg" },
+      {
+        "type": "compare",
+        "labelLeft": "Wireframe",
+        "labelRight": "Render",
+        "before": "img/compare-boston-sofa-A.jpg",
+        "after": "img/compare-boston-sofa-B.jpg"
+      },      
       { "type": "text", "text": "Dodatkowy opis pod galerią" }
     ]
   },
 
   "abandoned": {
-    "title": "Abandoned",
-    "desc": "Tools used: Unreal Engine 5.4, Blender 3D, DaVinci Resolve",
+    "title": {
+      "pl": "Nowa oprawa graficzna TVP abc",
+      "en": "jingles for tv station TVP abc"
+    },
+    "desc": {
+      "pl": "Prywatny projekt, mający na celu edukację w Unreal Engine ",
+      "en": "Project description"
+    },
     "content": [
       { "type": "image", "src": "img/Abandoned-01.jpg" },
       { "type": "youtube", "id": "rbMmR6LK60k" },
@@ -49,19 +83,21 @@
 
   "tvp-abc": {
     "title": {
-      "pl": "jingle dla TVP abc",
+      "pl": "Nowa oprawa graficzna TVP abc",
       "en": "jingles for tv station TVP abc"
     },
     "desc": {
-      "pl": "Opis projektu…",
+      "pl": "Dla telewizji ABC, przygotowane zostały animowane jingle ",
       "en": "Project description"
     },
     "content": [
-      { "type": "image", "src": "img/tvp-abc-01.jpg" },
+      { "type": "image", "src": "img/portfolio-tvp-abc-01.jpg" },
+      { "type": "image", "src": "img/portfolio-tvp-abc-02.jpg" },
       { "type": "youtube", "id": "xdYkDlVZfFE" },
-      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
-      { "type": "image", "src": "design1.jpg" },
-      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+      { "type": "image", "src": "img/portfolio-tvp-abc-03.jpg" },
+      { "type": "image", "src": "img/portfolio-tvp-abc-04.jpg" },
+      { "type": "image", "src": "img/portfolio-tvp-abc-05.jpg" },
+      { "type": "image", "src": "img/portfolio-tvp-abc-06.jpg" }
     ]
   },
 
@@ -84,18 +120,16 @@
 
   "quantuum": {
     "title": {
-      "pl": "jingle dla TVP abc",
-      "en": "jingles for tv station TVP abc"
+      "pl": "Quantuum rendery produktowe",
+      "en": "Quantuum product renderings"
     },
     "desc": {
-      "pl": "Opis projektu…",
+      "pl": "Wykonaliśmy modele 3D produktów, oraz serię renderów / wizualizacji produktów na białym tle wraz z kanałem alfa pod materiały reklamowe. Rendery zostały wykonane w wysokiej rozdzielczości, aby można je było dowolnie cropować i dostosowywać pod banery reklamowe. ",
       "en": "Project description"
     },
     "content": [
-      { "type": "image", "src": "img/Quantum-sklad-1RLLT-02prev.jpg" },
-      { "type": "image", "src": "img/Quantum-sklad-3RLLT-02prev.jpg" },
-      { "type": "image", "src": "img/Quantum-sklad-15prev2.jpg" },
-      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+      { "type": "image", "src": "img/portfolio-quantuum-01.jpg" },
+      { "type": "image", "src": "img/portfolio-quantuum-02.jpg" }
     ]
   },
 
@@ -105,29 +139,44 @@
       "en": "Loooomza"
     },
     "desc": {
-      "pl": "Narzedzia użyte",
+      "pl": "Rendery 3D zostały przez nas przygotowane na potrzeby kampanii promocyjnej w całej Polsce. Założeniem projektu było ukazanie w zależności od rodzaju prezentowanego piwa słód, chmiel oraz miód w wirze źródlanej wody. W tym celu przygotowaliśmy modele 3D butelek piwa, oraz wygenerowaliśmy splashe wody w które to opletliśmy butelki.",
       "en": "Tools used:"
     },
     "content": [
-      { "type": "image", "src": "img/Quantum-sklad-1RLLT-02prev.jpg" },
-      { "type": "image", "src": "img/Quantum-sklad-3RLLT-02prev.jpg" },
-      { "type": "image", "src": "img/Quantum-sklad-15prev2.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-01.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-02.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-03.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-04.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-05.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-06.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-07.jpg" },
+      { "type": "image", "src": "img/portfolio-lomza-08.jpg" },
       { "type": "text", "text": {
           "pl": "Dodatkowy opis pod galerią",
           "en": "english text below"
         }
-      }
+      },
+      { "type": "image", "src": "img/portfolio-lomza-04.jpg" }
+
     ]
   },
 
   "alfa": {
-    "title": "Alfa",
-    "desc": "Tools used: Blender 3D, Plasticity",
+    "title": {
+      "pl": "Łomża",
+      "en": "Loooomza"
+    },
+    "desc": {
+      "pl": "d",
+      "en": ""
+    },
     "content": [
-      { "type": "image", "src": "img/Quantum-sklad-1RLLT-02prev.jpg" },
-      { "type": "image", "src": "img/Quantum-sklad-3RLLT-02prev.jpg" },
-      { "type": "image", "src": "img/Quantum-sklad-15prev2.jpg" },
-      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+      { "type": "image", "src": "img/portfolio-alfa-01.jpg" },
+      { "type": "youtube", "id": "vbIka1TqLao" },
+      { "type": "image", "src": "img/portfolio-alfa-02.jpg" },
+      { "type": "image", "src": "img/portfolio-alfa-03.jpg" },
+      { "type": "image", "src": "img/portfolio-alfa-04.jpg" },
+      { "type": "image", "src": "img/portfolio-alfa-05.jpg" }
     ]
   },
 
@@ -143,14 +192,17 @@
   },
 
   "tvp-zwierzaki": {
-    "title": "Jingle animation for TVP ABC",
-    "desc": "Opis projektu…",
+    "title": {
+      "pl": "Zwierzaki czytaki",
+      "en": ""
+    },
+    "desc": {
+      "pl": "Byliśmy odpowiedzialni za stworzenie animowanej czołówki, w której nadaliśmy literom wygląd i zachowanie niesfornych zwierzaków, bawiących się z książkami. Przygotowaliśmy wyjątkowe postacie w 3D, które są jednocześnie literami alfabetu. Każda z nich to inny zwierzak o charakterystycznych cechach.",
+      "en": "Tools used:"
+    },
     "content": [
-      { "type": "image", "src": "img/tvp-zwierzaki-czytaki-01.jpg" },
       { "type": "youtube", "id": "4LEHF6KFZS0" },
-      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
-      { "type": "image", "src": "design1.jpg" },
-      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+      { "type": "image", "src": "img/tvp-zwierzaki-czytaki-01.jpg" }
     ]
   },
 

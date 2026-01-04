@@ -1,7 +1,10 @@
 {
   "hero": {
-    "title": "John Kowalski",
-    "subtitle": "Frontend / WebGL Developer"
+    "title": "Tech Artist & 3D Artist",
+    "subtitle": "Crafting digital worlds, one polygon at a time."
+  },
+  "background": {
+    "about": "about"
   },
   "menu": {
     "projects": "Projects",
@@ -9,17 +12,28 @@
     "contact": "Contact"
   },
   "portfolio": {
-    "seemore": "view more"
+    "seemore": "see more",
+    "seeless": "see less"
   },
   "filters": {
     "all": "All",
-    "modelling3d": "3D modelling"
+    "modelling3d": "3D modelling",
+    "animation": "Animation",
+    "other": "More"
   },
   "about": {
     "title": "3D Artist & Animatorr",
     "subtitle": " I create high-quality 3D models, animations and visual experiences for games, products and interactive media."
   },
   "links": {
-    "seemore": "Read more"
+    "seemore": "See more",
+    "seeless": "See less"
+  },
+  "website": {
+   "footer": {
+     "contact": "Contakt",
+     "about": "About",
+     "social": "Social"
+   }
   }
 }

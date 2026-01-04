@@ -1,12 +1,102 @@
 let LANG = localStorage.getItem('lang') || 'en';
+let popupScrollY = 0;
+let activeProjectId = null;
 
+
+const toggle = document.getElementById('aboutToggle');
+const more = document.getElementById('aboutMore');
+const skillFills = document.querySelectorAll('.skill-fill');
+
+
+if (toggle && more) {
+  toggle.addEventListener('click', (e) => { 
+    e.preventDefault();
+
+    const open = more.classList.toggle('open');
+    const skillCircles = document.querySelectorAll('.skill-circle');
+
+    skillCircles.forEach(circle => {
+      const percent = circle.dataset.percent;
+      const progress = circle.querySelector('.progress');
+      const radius = 52;
+      const circumference = 2 * Math.PI * radius;
+
+      progress.style.strokeDasharray = circumference;
+
+      if (open) {
+        // ▶️ otwieranie
+        const offset = circumference - (percent / 100) * circumference;
+        requestAnimationFrame(() => {
+          progress.style.strokeDashoffset = offset;
+        });
+      } else {
+        // ◀️ zamykanie
+        requestAnimationFrame(() => {
+          progress.style.strokeDashoffset = circumference;
+        });
+      }
+    });
+
+
+    toggle.dataset.i18n = open
+      ? 'links.seeless'
+      : 'links.seemore';
+
+    toggle.setAttribute('aria-expanded', open);
+
+    /* 🔁 TU JEST OK */
+    window.applyTranslations();
+
+    // 🔥 ANIMACJA SKILLI – tylko przy otwarciu
+    if (open) {
+      skillFills.forEach(bar => {
+        const targetWidth = bar.dataset.level;
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.width = targetWidth;
+        }, 120);
+      });
+    }
+
+    if (!open) {
+      skillFills.forEach(bar => bar.style.width = '0');
+    }
+
+    if (open && !skillsAnimated) {
+      skillsAnimated = true;
+
+      document.querySelectorAll('.skill-circle').forEach(circle => {
+        const percent = circle.dataset.percent;
+        const progress = circle.querySelector('.progress');
+        const radius = 52;
+        const circumference = 2 * Math.PI * radius;
+        const offset = circumference - (percent / 100) * circumference;
+
+        progress.style.strokeDasharray = circumference;
+        progress.style.strokeDashoffset = offset;
+      });
+    }
+
+    
+  });
+}
+
+/* zmiana języka */
 $('[data-lang]').on('click', function () {
   LANG = $(this).data('lang');
   localStorage.setItem('lang', LANG);
 
-  updateStaticTexts(); // menu, hero, itp.
-  closePopup();        // u Ciebie logiczne
+  window.loadLang(LANG);
+
+  // 🔁 aktualizacja popupu
+  if (activeProjectId && PROJECTS[activeProjectId]) {
+    const project = PROJECTS[activeProjectId];
+    $('#popupTitle').text(t(project.title));
+    $('#popupDesc').text(t(project.desc));
+  }
 });
+
+
 
 
 const t = (obj) => {
@@ -28,6 +118,8 @@ $('.gallery').on('click', '.item', function () {
 
   const projectId = $(this).data('project-id');
   if (!projectId || !PROJECTS[projectId]) return;
+
+  activeProjectId = projectId;
 
   const project = PROJECTS[projectId];
 
@@ -63,10 +155,110 @@ $('.gallery').on('click', '.item', function () {
       `);
     }
 
+    if (block.type === 'compare') {
+      renderCompare(block);
+    }
+
   });
 
-  $('#projectPopup').addClass('active');
-  $('body').addClass('popup-open');
+function renderCompare(data) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "compare";
+
+  wrapper.innerHTML = `
+    <img src="${data.after}" alt="">
+    <img src="${data.before}" alt="" class="compare-top">
+    <div class="compare-handle"></div>
+  `;
+
+  document.querySelector("#popupGallery").appendChild(wrapper);
+
+  introAnimation(wrapper);          // auto preview
+  enableCompareDrag(wrapper, "horizontal"); // lub "horizontal"
+}
+
+
+function enableCompareDrag(compare, axis = "horizontal") {
+  const topImg = compare.querySelector(".compare-top");
+  const handle = compare.querySelector(".compare-handle");
+
+  let dragging = false;
+
+  const update = (clientX, clientY) => {
+    const rect = compare.getBoundingClientRect();
+    let percent;
+
+    if (axis === "vertical") {
+      let y = clientY - rect.top;
+      y = Math.max(0, Math.min(y, rect.height));
+      percent = (y / rect.height) * 100;
+
+      topImg.style.clipPath = `inset(${percent}% 0 0 0)`;
+      handle.style.top = percent + "%";
+    } else {
+      let x = clientX - rect.left;
+      x = Math.max(0, Math.min(x, rect.width));
+      percent = (x / rect.width) * 100;
+
+      topImg.style.clipPath = `inset(0 ${100 - percent}% 0 0)`;
+      handle.style.left = percent + "%";
+    }
+  };
+
+  /* 🟢 HOVER FOLLOW (mouse only) */
+  compare.addEventListener("pointermove", e => {
+    if (
+      e.pointerType === "mouse" &&
+      !dragging &&
+      compare.dataset.ready === "1"
+    ) {
+      update(e.clientX, e.clientY);
+    }
+  });
+
+  /* 🟢 DRAG (mouse + touch) */
+  compare.addEventListener("pointerdown", e => {
+    dragging = true;
+    compare.setPointerCapture(e.pointerId);
+    update(e.clientX, e.clientY);
+  });
+
+  compare.addEventListener("pointerup", () => dragging = false);
+
+  compare.addEventListener("pointerleave", () => {
+   dragging = false;
+   topImg.style.clipPath = `inset(0 50% 0 0)`;
+   handle.style.left = "50%";
+  });
+
+  compare.addEventListener("pointercancel", () => {
+    dragging = false;
+  });
+
+}
+
+
+function introAnimation(compare) {
+  const topImg = compare.querySelector(".compare-top");
+  const handle = compare.querySelector(".compare-handle");
+
+  let p = 10;
+  const anim = setInterval(() => {
+    p += 2;
+    if (p > 90) {
+      clearInterval(anim);
+      compare.dataset.ready = "1"; // 🔓 unlock
+    }
+
+    topImg.style.clipPath = `inset(0 ${100 - p}% 0 0)`;
+    handle.style.left = p + "%";
+  }, 16);
+}
+
+
+
+openPopup();
+
 
   requestAnimationFrame(() => {
     $('#popupGallery iframe').each(function () {
@@ -74,36 +266,45 @@ $('.gallery').on('click', '.item', function () {
       if (src) $(this).attr('src', src);
     });
   });
+});
 
-  // =======================
-  // CLOSE POPUP (X)
-  // =======================
-  $('.close').on('click', function () {
-    closePopup();
-  });
+function openPopup() {
+  popupScrollY = window.scrollY;
 
-  // =======================
-  // CLOSE POPUP (BACKGROUND)
-  // =======================
-  $('#projectPopup').on('click', function (e) {
-    if (e.target === this) {
-      closePopup();
-    }
-  });
-
-  $('.popup-inner').on('click', function(e){
-    e.stopPropagation();
-  });
-
-  // =======================
-  // CLOSE FUNCTION
-  // =======================
-  function closePopup() {
-    $('#projectPopup').removeClass('active');
-    $('body').removeClass('popup-open');
-
-    // 🔇 zatrzymanie YouTube
-    $('#popupGallery').html('');
+  if (popupScrollY > window.innerHeight * 0.6) {
+    document.body.classList.add("hero-killed");
   }
 
+  document.body.classList.add("popup-open");
+  $('#projectPopup').addClass('active');
+}
+
+
+
+function closePopup() {
+  $('#projectPopup').removeClass('active');
+
+  document.body.classList.remove('popup-open');
+  document.body.classList.remove('hero-killed');
+
+  window.scrollTo(0, popupScrollY);
+  $('#popupGallery').html('');
+}
+
+
+
+
+$('.popup-close').on('click', closePopup);
+
+$('#projectPopup').on('click', e => {
+  if (e.target === e.currentTarget) closePopup();
 });
+
+$('.popup-inner').on('click', e => e.stopPropagation());
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && $('#projectPopup').hasClass('active')) {
+    closePopup();
+  }
+});
+

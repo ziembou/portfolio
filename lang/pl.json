@@ -1,7 +1,11 @@
 {
   "hero": {
     "title": "Marcin Ziemba",
-    "subtitle": ""
+    "subtitle": "Grafika 3D, Animacja, Riggowanie",
+    "link": "Zobacz projekty"
+  },
+  "background": {
+    "about": "o mnie"
   },
   "menu": {
     "projects": "Projekty",
@@ -9,17 +13,28 @@
     "contact": "Kontakt"
   },
   "portfolio": {
-    "seemore": "Zobacz więcej"
+    "seemore": "Zobacz więcej",
+    "seeless": "Zobacz mniej"
   },
   "filters": {
     "all": "Wszystkie",
-    "modelling3d": "modelowanie 3D"
+    "modelling3d": "modelowanie 3D",
+    "animation": "Animacja",
+    "other": "Więcej"
   },
   "about": {
-    "title": "Grafik 3D i animator",
-    "subtitle": " 17 lat doświadczenia games, products and interactive media."
+    "title": "Cześć!",
+    "subtitle": "Nazywam się Marcin. Grafiką 3D zawodowo zajmuję się od ponad 17 lat. Specjalizuję się w tworzeniu modeli 3D z dbałością o detale i czystą topologię, a także w animacji i riggowaniu. Najbliżej mi do roli Tech Artysty, łączącego stronę artystyczną z techniczną."
   },
   "links": {
-    "seemore": "Zobacz więcej  →"
+    "seemore": "Zobacz więcej",
+    "seeless": "Zobacz mniej"
+  },
+  "website": {
+    "footer": {
+      "contact": "Kontakt",
+      "about": "O mnie",
+      "social": "Socjale"
+    }
   }
 }

@@ -31,9 +31,8 @@
 <header class="site-header">
   <div class="nav-inner">
     <div class="logo">
-      <img src="img/logo-pro-fx.png" alt="logo pro-fx">
+      <a href="#"><img src="img/logo-marcin.png" alt="logo pro-fx"></a>
     </div>
-
     <nav class="nav">
       <a href="#portfolio" data-i18n="menu.projects"></a>
       <a href="#about"  data-i18n="menu.about"></a>
@@ -57,41 +56,127 @@
 			<source src="img/video-hero.mp4" type="video/mp4">
 		</video>
 	</div>
+	<div class="hero-mobile">
+		<h1>Design<br>in motion</h1>
+		<p>3D · Unreal · Visuals</p>
+	</div>
   <div class="hero-text">
     <h1 data-i18n="hero.title"></h1>
     <p data-i18n="hero.subtitle"></p>
+	<p data-i18n="hero.link"></p>
   </div>
 
 </div>
 <section class="about creative" id="about">
-  <div class="about-bg-text">.ebałt</div>
+  <div class="about-bg-text" data-i18n="background.about"></div>
 
   <div class="about-inner">
     <div class="about-image">
-      <img src="img/Generated Image December 28, 2025 - 4_49PM.png" alt="Your photo">
+      <img src="img/about-me-portrait.png" alt="Your photo">
     </div>
-
     <div class="about-content">
       <h2 data-i18n="about.title">
         <br>
       </h2>
-
       <p class="about-lead" data-i18n="about.subtitle"></p>
-
       <p>
         My work connects <strong>design</strong>, <strong>CAD</strong> and
         <strong>digital experiences</strong>.
         I like minimal forms, bold typography and details that matter.
-      </p>
+      </p>	  
+	<div class="about-more" id="aboutMore">
+		<div class="skills">
 
-      <a href="#portfolio" class="about-btn" data-i18n="links.seemore"></a>
+		<div class="skill">
+			<div class="skill-header">
+			<span>Blender</span>
+			<span class="skill-level">Expert</span>
+			</div>
+			<div class="skill-bar">
+			<div class="skill-fill" data-level="60%"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="skill-header">
+			<span>Unreal Engine</span>
+			<span class="skill-level">Advanced</span>
+			</div>
+			<div class="skill-bar">
+			<div class="skill-fill" data-level="30%"></div>
+			</div>
+		</div>
+		<div class="skill">
+			<div class="skill-header">
+			<span>CAD / Solid Modeling</span>
+			<span class="skill-level">Advanced</span>
+			</div>
+			<div class="skill-bar">
+			<div class="skill-fill" data-level="90%"></div>
+			</div>
+		</div>
+		<div>Software</div>
+		<div class="skills-radial">
+
+			<div class="skill-circle" data-percent="85">
+				<svg viewBox="0 0 120 120">
+				<circle class="bg" cx="60" cy="60" r="52"/>
+				<circle class="progress" cx="60" cy="60" r="52"/>
+				</svg>
+				<div class="skill-label">
+				<strong>Blender</strong>
+				<span>Advanced</span>
+				</div>
+			</div>
+
+			<div class="skill-circle" data-percent="25">
+				<svg viewBox="0 0 120 120">
+				<circle class="bg" cx="60" cy="60" r="52"/>
+				<circle class="progress" cx="60" cy="60" r="52"/>
+				</svg>
+				<div class="skill-label">
+				<strong>Unreal Engine</strong>
+				<span>Advanced</span>
+				</div>
+			</div>
+
+			<div class="skill-circle" data-percent="80">
+				<svg viewBox="0 0 120 120">
+				<circle class="bg" cx="60" cy="60" r="52"/>
+				<circle class="progress" cx="60" cy="60" r="52"/>
+				</svg>
+				<div class="skill-label">
+				<strong>CAD</strong>
+				<span>Professional</span>
+				</div>
+			</div>
+			<div class="skill-circle" data-percent="80">
+				<svg viewBox="0 0 120 120">
+				<circle class="bg" cx="60" cy="60" r="52"/>
+				<circle class="progress" cx="60" cy="60" r="52"/>
+				</svg>
+				<div class="skill-label">
+				<strong>CAD</strong>
+				<span>Professional</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+	<a href="#"
+		class="about-btn"
+		id="aboutToggle"
+		data-state="closed"
+		data-i18n="links.seemore">
+	</a>
+
     </div>
 
   </div>
 </section>
 
 <div class="scroll-watcher"></div>
-
 <section class="portfolio" id="portfolio">
 	<div class="portfolio-bg-text">.portfolio</div>
 	<!--
@@ -102,18 +187,33 @@
 	<main class="mainContainer">
 		<!--  *****  Buttons Section Starts  *****  -->
 		<div class="button-group">
-			<button class="button active" data-filter="*" data-i18n="filters.all"></button>
-			<button class="button" data-filter=".modelling3d" data-i18n="filters.modelling3d"></button>
-			<button class="button" data-filter=".cad">3D CAD</button>
-			<button class="button" data-filter=".rendering">Renders</button>
-			<button class="button" data-filter=".animation">3D Animation</button>
-			<button class="button" data-filter=".rigging">3D Rigging</button>
-			<button class="button" data-filter=".photogrammetry">Photogrammetry</button>
-			<button class="button" data-filter=".unreal">Unreal</button>
-			<button class="button" data-filter=".photography">Photography</button>			
-			<button class="button" data-filter=".print3d">3D Print</button>
-			<button class="button" data-filter=".scripting">Scripting</button>
+
+		<button class="button active" data-filter="*"
+			data-i18n="filters.all"></button>
+
+		<button class="button" data-filter=".modelling3d"
+			data-i18n="filters.modelling3d"></button>
+
+		<button class="button" data-filter=".animation"
+			data-i18n="filters.animation"></button>
+
+		<div class="filter-more">
+			<button class="button more-toggle"
+			data-i18n="filters.other"></button>
+			<div class="more-menu">
+				<button data-filter=".cad">3D CAD</button>
+				<button data-filter=".rendering">Renders</button>
+				<button data-filter=".rigging">Rigging</button>
+				<button data-filter=".photogrammetry">Photogrammetry</button>
+				<button data-filter=".unreal">Unreal</button>
+				<button data-filter=".photography">Photography</button>
+				<button data-filter=".print3d">3D Print</button>
+				<button data-filter=".scripting">Scripting</button>
+			</div>
 		</div>
+
+		</div>
+
 		<!--  *****  Buttons Section Ends  *****  -->
 
 		<!--  *****  Gallery Section Starts  *****  -->
@@ -121,13 +221,13 @@
 			<div class="item cad modelling3d animation unreal" data-project-id="xtz-750-main">
 				<img src="img/xtz-750-01.jpg" alt="XTZ 750">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">XTZ 750</a>
+					<a href="javascript:void(0)" class="open-project">Yamaha XTZ 750</a>
 				</div>
 			</div>
       <div class="item cad modelling3d animation unreal" data-project-id="xtz-750-engine">
 				<img src="img/thumb-Silnik-01.jpg" alt="XTZ 750">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">XTZ 750</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
 			<div class="item rendering modelling3d" data-project-id="boston-sofa">
@@ -136,74 +236,86 @@
 					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
-			<div class="item animation modelling3d" data-project-id="abandoned">
-				<img src="img/Abandoned-01.jpg" alt="XTZ 750">
+			<div class="item animation modelling3d unreal" data-project-id="abandoned">
+				<img src="img/Abandoned-01.jpg" alt="abandonded">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
 			<div class="item photography" data-project-id="subaru-photo">
 				<img src="img/thumb-Subaru-01.jpg" alt="XTZ 750">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
       <div class="item rendering" data-project-id="lomza">
 				<img src="img/thumb-lomza-01.jpg" alt="Lomza beer">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
       <div class="item rendering" data-project-id="fresso-home">
 				<img src="img/thumb-fresso-01.jpg" alt="Fresso cosmetics">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
       <div class="item animation" data-project-id="alfa">
 				<img src="img/thumb-alfa-01.jpg" alt="Tvp alfa">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
       <div class="item rendering" data-project-id="tvp-abc">
-				<img src="img/tvp-abc-01.jpg" alt="Fresso cosmetics">
+				<img src="img/portfolio-tvp-abc-04.jpg" alt="Fresso cosmetics">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
-      <div class="item rendering" data-project-id="quantuum">
-				<img src="img/Quantum-sklad-15prev2.jpg" alt="Quantuum">
+      <div class="item rendering modelling3d" data-project-id="quantuum">
+				<img src="img/portfolio-quantuum-01.jpg" alt="Quantuum">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">VIEW MORE</a>
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
-		</div>
+      <div class="item animation" data-project-id="tvp-zwierzaki">
+				<img src="img/tvp-zwierzaki-czytaki-01.jpg" alt="Fresso cosmetics">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+				</div>
+			</div>
+	</div>
 
 	</main>
 
 </section>
 <div id="projectPopup" class="project-popup">
   <div class="popup-inner">
-    <span class="close">×</span>
 
-    <h2 id="popupTitle"></h2>
-    <p id="popupDesc"></p>
-    <div id="popupGallery"></div>
+    <button class="popup-close" aria-label="Close">×</button>
+
+    <div class="popup-scroll">
+      <h2 id="popupTitle"></h2>
+      <p id="popupDesc"></p>
+      <div id="popupGallery"></div>
+    </div>
+
   </div>
 </div>
+
+
 
 <footer class="site-footer" id="contact">
   <div class="footer-inner">
 
     <div class="footer-col">
-      <h3>Contact</h3>
+      <h3 data-i18n="website.footer.contact"></h3>
       <p>Email: <a href="mailto:kontakt@email.com">kontakt@email.com</a></p>
       <p>Location: Poland</p>
     </div>
 
     <div class="footer-col">
-      <h3>Social</h3>
+      <h3 data-i18n="website.footer.social"></h3>
       <div class="footer-socials">
         <a href="https://www.youtube.com/@marcin3D-on8nk" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -214,7 +326,7 @@
     </div>
 
     <div class="footer-col">
-      <h3>About</h3>
+      <h3 data-i18n="website.footer.about">About</h3>
       <p>
         Portfolio showcasing design & development projects.
         Built with HTML, CSS, JS. Author: Marcin Ziemba
@@ -224,7 +336,7 @@
   </div>
 
   <div class="footer-bottom">
-    © 2025 Your Name. All rights reserved.
+    © 2026 Marcin Ziemba. All rights reserved.
   </div>
 </footer>
 
@@ -233,9 +345,16 @@
 <!--   *****   JQuery Link   *****   -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
-<script src="js/projects.js"></script>
-<script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"></script>
+<script>
+if (!("ScrollTimeline" in window)) {
+  var s = document.createElement("script");
+  s.src = "https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js";
+  document.head.appendChild(s);
+}
+</script>
+
 <script src="js/i18n.js"></script>
+<script src="js/projects.js"></script>
 <!--<script src="js/effects.js"></script> -->
 
 
@@ -255,8 +374,33 @@ addEventListener("scroll", () => {
   header.classList.toggle("scrolled", scrollY > innerHeight * 0.1);
 });
 
+/*
 burger.addEventListener("click", () => {
   nav.classList.toggle("open");
+});*/
+
+/* 🍔 toggle burger */
+burger.addEventListener("click", (e) => {
+  e.stopPropagation(); // ⛔ nie zamykaj przez document
+  nav.classList.toggle("open");
+});
+
+/* 📎 klik w link → zamknij menu */
+nav.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
+});
+
+/* 🖱 klik poza menu → zamknij */
+document.addEventListener("click", (e) => {
+  if (
+    nav.classList.contains("open") &&
+    !nav.contains(e.target) &&
+    !burger.contains(e.target)
+  ) {
+    nav.classList.remove("open");
+  }
 });
 
 //DOPISAC JSON AUTHOR
@@ -279,6 +423,41 @@ $(this).addClass('active');
 var value = $(this).attr('data-filter');
 $gallery.isotope({ filter: value });
 });
+
+$('.more-toggle').on('click', function () {
+  $('.filter-more').toggleClass('open');
+});
+
+$('.more-menu button').on('click', function () {
+  const filter = $(this).data('filter');
+
+  $('.button-group .button').removeClass('active');
+  $('.more-toggle').addClass('active');
+
+  $gallery.isotope({ filter });
+
+  $('.filter-more').removeClass('open');
+});
+
+// 🔒 klik poza dropdown → zamknij
+$(document).on('click', function () {
+  $('.filter-more').removeClass('open');
+});
+
+// 🛑 klik wewnątrz dropdown → NIE zamykaj
+$('.filter-more').on('click', function (e) {
+  e.stopPropagation();
+});
+
+// 🛑 klik w toggle → NIE zamykaj przez document
+$('.more-toggle').on('click', function (e) {
+  e.stopPropagation();
+});
+
+
+
+
+
 </script>
 </body>
 </html>

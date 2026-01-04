@@ -1,22 +1,38 @@
 const defaultLang = 'pl';
 
+let currentTranslations = {};
+let currentLang = localStorage.getItem('lang') || defaultLang;
+
 async function loadLang(lang) {
   const res = await fetch(`lang/${lang}.json`);
-  const translations = await res.json();
+  currentTranslations = await res.json();
+  currentLang = lang;
 
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.dataset.i18n.split('.');
-    let value = translations;
-
-    key.forEach(k => value = value[k]);
-    if (value) el.textContent = value;
-  });
-
+  applyTranslations();
   localStorage.setItem('lang', lang);
+  
+  if (activeProjectId && PROJECTS[activeProjectId]) {
+  const project = PROJECTS[activeProjectId];
+
+  $('#popupTitle').text(t(project.title));
+  $('#popupDesc').text(t(project.desc));
 }
 
-document.querySelectorAll('[data-lang]').forEach(btn => {
-  btn.addEventListener('click', () => loadLang(btn.dataset.lang));
-});
+}
 
-loadLang(localStorage.getItem('lang') || defaultLang);
+function applyTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const keys = el.dataset.i18n.split('.');
+    let value = currentTranslations;
+
+    keys.forEach(k => value = value?.[k]);
+    if (value) el.textContent = value;
+  });
+}
+
+/* 🔥 KLUCZOWE */
+window.loadLang = loadLang;
+window.applyTranslations = applyTranslations;
+
+/* init */
+loadLang(currentLang);
