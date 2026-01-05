@@ -16,7 +16,7 @@
       "en": "Yamaha XTZ 750 "
     },
     "desc": {
-      "pl": "Prywatny projekt z szerokim zakresem, którego celem była nauka modelowania CAD w Plasticity, teksturowania w Blender 3D oraz interakcja całości w Unreal Engine.",
+      "pl": "Prywatny projekt z szerokim zakresem, którego celem było rozwinięcię umiejętności modelowania CAD w Plasticity, teksturowania w Blender 3D oraz interakcja całości w Unreal Engine.",
       "en": "Project description"
     },
     "content": [
@@ -46,7 +46,7 @@
       "en": "Boston Sofa - leather furniture showroom"
     },
     "desc": {
-      "pl": "Dla klienta przygotowane zostały modele 3D mebli skórzanych w wariacjach jedno, dwu i trzy-osobowych. Całość wykonana w Blender 3D oraz Marmoset Toolbag. Aby zachować poprawne proporcje mebli, użyta została technika fotogrametrii, która posłużyła jako referencja dla modelowania 3D foteli oraz sof. Priorytetem była dbałość o szczegóły oraz poprawną topologię siatki",
+      "pl": "Dla klienta przygotowane zostały modele 3D mebli skórzanych w wariacjach jedno, dwu i trzy-osobowych. Całość wykonana w Blender 3D oraz Marmoset Toolbag. Modelowanie odbywało się na skanie 3D fotela (Lidar), co poskutkowało idealnymi proporcjami i kształtem fotela. Priorytetem była dbałość o szczegóły oraz poprawną topologię siatki",
       "en": "Project description"
     },
     "content": [
@@ -65,8 +65,8 @@
 
   "abandoned": {
     "title": {
-      "pl": "Nowa oprawa graficzna TVP abc",
-      "en": "jingles for tv station TVP abc"
+      "pl": "Opuszczony Rzeszów - projekt Unreal Engine ",
+      "en": "Abandoned Rzeszów"
     },
     "desc": {
       "pl": "Prywatny projekt, mający na celu edukację w Unreal Engine ",
@@ -103,18 +103,18 @@
 
   "fresso-home": {
     "title": {
-      "pl": "jingle dla TVP abc",
-      "en": "jingles for tv station TVP abc"
+      "pl": "Fresso - kosmetyki dla auta",
+      "en": "Fresso - cosmetics"
     },
     "desc": {
       "pl": "Opis projektu…",
       "en": "Project description"
     },
     "content": [
-      { "type": "image", "src": "img/Fersso-home-clean_zestawienie4.jpg" },
-      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
-      { "type": "image", "src": "design1.jpg" },
-      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+      { "type": "image", "src": "img/portfolio-fresso-01.jpg" },
+      { "type": "image", "src": "img/portfolio-fresso-02.jpg" },
+      { "type": "image", "src": "img/portfolio-fresso-04.jpg" },
+      { "type": "image", "src": "img/portfolio-fresso-03.jpg" }
     ]
   },
 
@@ -208,15 +208,19 @@
 
   "subaru-photo": {
    "title": {
-      "pl": "Łomża",
-      "en": "Loooomza"
+      "pl": "Subaru Forester STI Photo Shots",
+      "en": "Subaru Forester STI"
     },
     "desc": {
-      "pl": "Narzedzia użyte",
+      "pl": "Wybrane fotografie, wykonane w technice Drone Panning - czyli technice polegającej na przechwyceniu poruszającego się obiektu za pomocą kamery z dłuższym czasem naświetlania. Powstaje przez to iluzja ruchu, prędkości. Technika jest wymagająca pod tym względem, że potrzebna jest synchronizacja ruchu kamery (drona) oraz przedmiotu fotografii (auta w tym przypadku). Stworzenie zdjęcia z poprawną ostrością wymaga sporo prób",
       "en": "Tools used:"
     },
     "content": [
-      { "type": "image", "src": "img/photo-subaru-01.jpg" },
+      { "type": "image", "src": "img/portfolio-subaru-03.jpg" },
+      { "type": "image", "src": "img/portfolio-subaru-04.jpg" },
+      { "type": "image", "src": "img/portfolio-subaru-02.jpg" },
+      { "type": "image", "src": "img/portfolio-subaru-06.jpg" },
+      { "type": "image", "src": "img/portfolio-subaru-07.jpg" },
       { "type": "youtube", "id": "npxLpAC0Ovs" }
     ]
   }

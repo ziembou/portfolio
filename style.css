@@ -22,6 +22,11 @@ body{
   min-height: 100vh;
 }
 
+p{
+  text-indent: 1em;
+  text-align: justify;
+}
+
 .hero-video,
 .hero-text,
 .scroll-watcher {
@@ -55,65 +60,32 @@ body.hero-killed .hero-text {
 
 .about.creative {
   position: relative;
-  padding: 140px 20px;
+  padding: 14px 20px;
   background: radial-gradient(circle at top left, #ffffff, #e6e6e6);
   overflow: visible;
 }
-
 
 /* DUŻY TEKST W TLE */
 .about-bg-text {
   position: absolute;
   top: 50%;
-  left: -80px;
   transform: translateY(-50%) rotate(-90deg);
   font-size: 120px;
   font-weight: 700;
-  color: rgb(169, 169, 169);
+  color: rgb(224, 224, 224);
   letter-spacing: 0px;
   pointer-events: none;
 }
 
-@media (max-width: 900px) {
-  .about-bg-text {
-    font-size: 72px;
-    left: -40px;
-    opacity: 0.1;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-bg-text {
-    display: none;
-  }
-}
-
-
 .about-inner {
   max-width: 1300px;
   margin: 0 auto;
-  display: grid;
+  display: grid; 
   grid-template-columns: 420px 1fr;
-  gap: 80px;
+  gap: 20px;
   align-items: center;
   position: relative;
   z-index: 2;
-}
-
-@media (max-width: 900px) {
-  .about-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-image {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .about-content {
-    text-align: center;
-  }
 }
 
 /* IMAGE */
@@ -127,6 +99,7 @@ body.hero-killed .hero-text {
   font-size: 56px;
   line-height: 1.1;
   margin-bottom: 25px;
+  padding-top: 10px;
 }
 
 .about-content h2 span {
@@ -146,6 +119,38 @@ body.hero-killed .hero-text {
   max-width: 600px;
 }
 
+@media (max-width: 900px) {
+  .about-bg-text {
+    font-size: 72px;
+    left: -40px;
+    opacity: 0.1;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-bg-text {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image {
+    max-width: 320px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+}
+
 /* BUTTON */
 .about-btn {
   display: inline-block;
@@ -154,14 +159,15 @@ body.hero-killed .hero-text {
   padding: 14px 32px;
   border-radius: 40px;
   color: #fff;
-  background: linear-gradient(135deg, #7c7cff, #b86cff);
+  background: linear-gradient(135deg, #acacac, #252525);
   text-decoration: none;
   transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .about-btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(124,124,255,0.4);
+  background: linear-gradient(135deg, #60bd8b, #2b518f);
+  box-shadow: 0 20px 40px rgba(116, 116, 116, 0.4);
 }
 
 .about-more {
@@ -171,7 +177,7 @@ body.hero-killed .hero-text {
 }
 
 .about-more.open {
-  max-height: 1000px; /* albo 1000px */
+  max-height: 2000px; /* albo 1000px */
 }
 
 .about-btn::after {
@@ -223,13 +229,14 @@ body.hero-killed .hero-text {
 .skills-radial {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 2rem;
+  gap: 1rem;
   margin-top: 2.5rem;
+  max-width: 600px;
 }
 
 @media (max-width: 900px) {
   .skills-radial {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 0.3fr);
   }
 }
 
@@ -436,6 +443,7 @@ div.gallery{
 }
 div.gallery .item{
   position: relative;
+  border-radius: 10px;
   margin: 4px;
   width: calc(33.33% - 8px);
   overflow: hidden;
@@ -462,7 +470,7 @@ div.gallery .item:hover img{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(103, 255, 184, 0.7);
+  background-color: rgba(255, 255, 255, 0.251);
   color: var(--body-clr);
   padding: 15px;
   overflow: hidden;
@@ -474,14 +482,17 @@ div.gallery .item:hover img{
 }
 .item .overlay a{
   display: inline-block;
-  padding: 8px 16px;
+  background-color: #00000036;
+
+  padding: 18px 36px;
   color: var(--body-clr);
   text-decoration: none;
-  font-size: 14px;
+ /* border: 2px solid rgba(255, 255, 255, 0.199);*/
+  font-size: 18px;
   transition: 0.3s;
 }
 .item .overlay a:hover{
-  background-color: #6666663c;
+  border-radius: 10px;
 }
 
 @media(max-width: 1024px){
@@ -527,7 +538,7 @@ div.gallery .item:hover img{
   max-width: 960px;
 
   margin: 0 auto;   /* 🔑 CENTROWANIE */
-  background: #111;
+  background: #ffffff;
 
   border-radius: 16px;
   padding: 20px;
@@ -563,23 +574,19 @@ div.gallery .item:hover img{
   background-color: rgba(255,255,255,0.5);
 }
 
-
 .project-popup.active {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-
 .popup-close {
   position: absolute;
   top: 16px;
   right: -64px; /* ⬅️ obok popupu */
-
   width: 56px;
   height: 56px;
   border-radius: 50%;
-
   background: rgba(0,0,0,0.6);
   color: #fff;
   font-size: 36px;
@@ -628,6 +635,7 @@ body.popup-open {
 .popup-image{
   width:100%;
   margin-bottom:30px;
+  border-radius: 10px;
 }
 
 .popup-video{
@@ -930,12 +938,11 @@ body.popup-open {
   transition: color 0.3s ease;
   text-decoration: none;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
 }
 
-
 .nav a:hover {
-  background-color: #0000003c;
+  background-color: #00000010;
   backdrop-filter: blur 20px;
 }
 
@@ -1010,6 +1017,7 @@ body.popup-open {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   cursor: ew-resize;
+    border-radius: 10px;
 }
 
 .compare img {
@@ -1018,6 +1026,7 @@ body.popup-open {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 
 .compare-top {
@@ -1070,7 +1079,6 @@ body.popup-open {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .slider {
   position: absolute;

@@ -24,7 +24,15 @@
   },
   "about": {
     "title": "Cześć!",
-    "subtitle": "Nazywam się Marcin. Grafiką 3D zawodowo zajmuję się od ponad 17 lat. Specjalizuję się w tworzeniu modeli 3D z dbałością o detale i czystą topologię, a także w animacji i riggowaniu. Najbliżej mi do roli Tech Artysty, łączącego stronę artystyczną z techniczną."
+    "subtitle": "Nazywam się Marcin. Grafiką 3D zawodowo zajmuję się od ponad 17 lat. Specjalizuję się w grafice 3D, jeżeli chcesz się dowiedzieć bardziej precyzyjnie w których dziedzinach, to zapraszam do przeczytania informacji w poniższym przycisku oraz zobaczenia mojego portfolio!",
+    "description-more": {
+      "01": "Jestem absolwentem <b>Wyższej Szkoły Informatyki i Zarządzania w Rzeszowie</b>, gdzie ukończyłem kierunek Grafika i Animacja Komputerowa, a także studia podyplomowe na kierunku <b>Inżynieria Oprogramowania</b>. To połączenie pozwala mi swobodnie poruszać się pomiędzy światem artystycznym a technicznym.",
+      "02": "<p>Przez długi czas tworzyłem jako freelancer, współpracując przy różnorodnych projektach – od wizualizacji 3D, przez animacje, po elementy wykorzystywane w grach i aplikacjach interaktywnych. Najbliżej mi do roli Tech Artysty. Lubię tworzyć modele 3D z naciskiem na: czystą i zoptymalizowaną topologię dbałość o detale poprawne przygotowanie assetów pod dalsze etapy produkcji",
+      "03": "<br><b>Znajomość oprogramowania",
+      "04": "<br>Poziomy zaawansowania przedstawione są w formie prostych wykresów. To subiektywna ocena mojego doświadczenia i komfortu pracy w danym oprogramowaniu, a nie sztywna miara procentowa — nauka w 3D nigdy się nie kończy.",
+      "05": "<br><b>Umiejętności techniczne"
+  
+    }
   },
   "links": {
     "seemore": "Zobacz więcej",

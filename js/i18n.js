@@ -26,9 +26,17 @@ function applyTranslations() {
     let value = currentTranslations;
 
     keys.forEach(k => value = value?.[k]);
-    if (value) el.textContent = value;
+
+    if (!value) return;
+
+    if (el.hasAttribute('data-i18n-html')) {
+      el.innerHTML = value; // 🔥 HTML allowed
+    } else {
+      el.textContent = value; // 🔒 safe text
+    }
   });
 }
+
 
 /* 🔥 KLUCZOWE */
 window.loadLang = loadLang;
