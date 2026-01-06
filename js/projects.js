@@ -275,11 +275,11 @@ function openPopup() {
     document.body.classList.add("hero-killed");
   }
 
+  history.pushState({ popup: true }, '');
+
   document.body.classList.add("popup-open");
   $('#projectPopup').addClass('active');
 }
-
-
 
 function closePopup() {
   $('#projectPopup').removeClass('active');
@@ -291,9 +291,6 @@ function closePopup() {
   $('#popupGallery').html('');
 }
 
-
-
-
 $('.popup-close').on('click', closePopup);
 
 $('#projectPopup').on('click', e => {
@@ -304,6 +301,12 @@ $('.popup-inner').on('click', e => e.stopPropagation());
 
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && $('#projectPopup').hasClass('active')) {
+    closePopup();
+  }
+});
+
+window.addEventListener('popstate', () => {
+  if ($('#projectPopup').hasClass('active')) {
     closePopup();
   }
 });

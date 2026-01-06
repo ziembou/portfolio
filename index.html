@@ -57,20 +57,22 @@
 		</video>
 	</div>
 	<div class="hero-mobile">
-		<h1>Design<br>in motion</h1>
+		<h1>3D Artist & Animation</h1>
 		<p>3D · Unreal · Visuals</p>
 	</div>
+	<div class="scroll-hint">↓</div>
   <div class="hero-text">
     <h1 data-i18n="hero.title"></h1>
     <p data-i18n="hero.subtitle"></p>
-	<p data-i18n="hero.link"></p>
+	<p data-i18n="hero.link" data-i18n-html></p>
   </div>
-
+  
 </div>
 <section class="about creative" id="about">
-  <div class="about-bg-text" data-i18n="background.about"></div>
+  
   <div class="about-inner">
-    <div class="about-image"><img src="img/about-me-portrait.png" alt="Your photo"></div>
+	<div class="about-bg-text" data-i18n="background.about"></div>
+    <div class="about-image"><img src="img/about-me-portrait2.png" alt="Your photo"></div>
     <div class="about-content">
       <h2 data-i18n="about.title">
         <br>
@@ -187,6 +189,7 @@
 				</div>
 			</div>
 		</div>
+		<!--
 		<div class="skills">
 			<div class="skill">
 				<div class="skill-header">
@@ -215,25 +218,22 @@
 				<div class="skill-fill" data-level="90%"></div>
 				</div>
 			</div>
-		</div> <!-- END SKILLS-->
+		</div>  END BAR SKILLS-->
 	 <!-- END ABOUT MORE-->
 </div>
-
 	<a href="#"
 		class="about-btn"
 		id="aboutToggle"
 		data-state="closed"
 		data-i18n="links.seemore">
 	</a>
-
     </div>
-
   </div>
 </section>
 
 <div class="scroll-watcher"></div>
 <section class="portfolio" id="portfolio">
-	<div class="portfolio-bg-text">.portfolio</div>
+	<div class="portfolio-bg-text" data-i18n="background.portfolio"></div>
 	<!--
 	<header class="section-head">
 		<h1>Portfolio</h1>
@@ -339,6 +339,18 @@
 					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
 				</div>
 			</div>
+      <div class="item print3d" data-project-id="druk-3d">
+				<img src="img/portfolio-3D-print-01.jpg" alt="Fresso cosmetics">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">3D Print</a>
+				</div>
+			</div>
+      <div class="item rigging" data-project-id="rigging">
+				<img src="img/thumb-rigging-01.jpg" alt="Riggowanie">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">3D Print</a>
+				</div>
+			</div>
 	</div>
 
 	</main>
@@ -365,7 +377,7 @@
 
     <div class="footer-col">
       <h3 data-i18n="website.footer.contact"></h3>
-      <p>Email: <a href="mailto:kontakt@email.com">kontakt@email.com</a></p>
+      <p><b>e-mail: </b><a href="mailto:kontakt@email.com">ziembou@gmail.com</a></p>
       <p>Location: Poland</p>
     </div>
 
@@ -384,7 +396,7 @@
       <h3 data-i18n="website.footer.about">About</h3>
       <p>
         Portfolio showcasing design & development projects.
-        Built with HTML, CSS, JS. Author: Marcin Ziemba
+        Built with HTML, CSS, JS. Author: <b>Marcin Ziemba</b>
       </p>
     </div>
 

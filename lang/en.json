@@ -4,7 +4,8 @@
     "subtitle": "Crafting digital worlds, one polygon at a time."
   },
   "background": {
-    "about": "about"
+    "about": "about",
+    "portfolio": "projects"
   },
   "menu": {
     "projects": "Projects",
@@ -22,8 +23,16 @@
     "other": "More"
   },
   "about": {
-    "title": "3D Artist & Animatorr",
-    "subtitle": " I create high-quality 3D models, animations and visual experiences for games, products and interactive media."
+    "title": "Hello!",
+    "subtitle": "My name is Marcin. I've been working professionally with 3D graphics for over 17 years. I specialize in 3D graphics. If you'd like to learn more about my specific areas, please click the button below and check out my portfolio!",
+    "description-more": {
+      "01": "I graduated from the <b>University of Information Technology and Management</b> in Rzeszów, where I majored in Computer Graphics and Animation, and completed postgraduate studies in Software Engineering. This combination allows me to move freely between the artistic and technical worlds.",
+      "02": "<p>For a long time, I worked as a freelancer, collaborating on a variety of projects—from 3D visualizations and animations to elements used in games and interactive applications. I'm most comfortable with the role of a Tech Artist. I enjoy creating 3D models with an emphasis on: clean and optimized topology, attention to detail, and proper asset preparation for subsequent production stages.",
+      "03": "<br><b>Software knowledge",
+      "04": "<br>Proficiency levels are presented as simple graphs. This is a subjective assessment of my experience and comfort with the software, not a rigid percentage—learning in 3D never ends.",
+      "05": "<br><b>Technical skills"
+  
+    }
   },
   "links": {
     "seemore": "See more",
@@ -31,7 +40,7 @@
   },
   "website": {
    "footer": {
-     "contact": "Contakt",
+     "contact": "Contact",
      "about": "About",
      "social": "Social"
    }

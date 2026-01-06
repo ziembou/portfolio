@@ -68,13 +68,26 @@ body.hero-killed .hero-text {
 /* DUŻY TEKST W TLE */
 .about-bg-text {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
-  font-size: 120px;
+  top: 20px;
+  z-index: 1;
+  font-size: 100px;
   font-weight: 700;
-  color: rgb(224, 224, 224);
   letter-spacing: 0px;
+  color: rgba(113, 113, 113, 0.21); /* używa Twojego primary */
   pointer-events: none;
+  user-select: none;
+}
+
+.portfolio-bg-text {
+  position: relative;
+  padding-left: 0px;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  color: rgba(113, 113, 113, 0.178); /* używa Twojego primary */
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
 }
 
 .about-inner {
@@ -90,6 +103,8 @@ body.hero-killed .hero-text {
 
 /* IMAGE */
 .about-image img {
+  position: relative;
+  z-index: 2;
   width: 100%;
 }
 
@@ -242,7 +257,7 @@ body.hero-killed .hero-text {
 
 @media (max-width: 480px) {
   .skills-radial {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -385,16 +400,6 @@ body.hero-killed .hero-text {
     font-size: 72px;
     left: -40px;
   }
-}
-
-.portfolio-bg-text {
-  font-size: 100px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  color: rgba(113, 113, 113, 0.178); /* używa Twojego primary */
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
 }
 
 .portfolio .section-head{
@@ -851,9 +856,7 @@ body.popup-open {
 
 /* MOBILE */
 .hero-mobile {
-  background:
-    linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.9)),
-    url('img/Abandoned-01.jpg') center/cover no-repeat;
+  display: none;
 }
 
 .hero::before {
@@ -864,7 +867,6 @@ body.popup-open {
   opacity:.08;
   z-index:2;
 }
-
 
 @media (max-width: 768px) {
   .hero-video {
@@ -881,14 +883,78 @@ body.popup-open {
     justify-content: center;
     height: 100vh;
     padding: 40px;
-    background: radial-gradient(circle at top, #03b1ec, #ffffff);
     color: white;
+
+    background: radial-gradient(
+      circle at 30% 20%,
+      #03b1ec,
+      #ffffff
+    );
+  
+    background-size: 200% 200%;
+    animation: gradientMove 4s ease-in-out infinite;
   }
 
   .hero-mobile h1 {
     font-size: 42px;
     line-height: 1.1;
     margin-bottom: 16px;
+  }
+}
+
+.hero-mobile h1 {
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  animation: textFloat 3s ease-in-out infinite;
+}
+
+@keyframes textFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* ⬇️ TO MUSI BYĆ POZA MEDIA QUERY */
+@keyframes gradientMove {
+  0% {
+    background-position: 20% 20%;
+    background-size: 180% 280%;
+  }
+  50% {
+    background-position: 80% 70%;
+    background-size: 320% 320%;
+  }
+  100% {
+    background-position: 20% 20%;
+    background-size: 280% 280%;
+  }
+}
+
+.scroll-hint {
+  color: white;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  opacity: 0.7;
+  animation: scrollBounce 2s infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
   }
 }
 

@@ -87,8 +87,8 @@
       "en": "jingles for tv station TVP abc"
     },
     "desc": {
-      "pl": "Dla telewizji ABC, przygotowane zostały animowane jingle ",
-      "en": "Project description"
+      "pl": "Animowane jingle dla TVP ABC ",
+      "en": "Animated jingles for TVP ABC"
     },
     "content": [
       { "type": "image", "src": "img/portfolio-tvp-abc-01.jpg" },
@@ -163,8 +163,8 @@
 
   "alfa": {
     "title": {
-      "pl": "Łomża",
-      "en": "Loooomza"
+      "pl": "Animowane jingle 3D dla Alfa TVP",
+      "en": "Animated jingles for Alfa TVP"
     },
     "desc": {
       "pl": "d",
@@ -181,13 +181,17 @@
   },
 
   "druk-3d": {
-    "title": "Druk 3D",
-    "desc": "Opis projektu…",
+    "title": {
+      "pl": "Druk 3D",
+      "en": "3D Print"
+    },
+    "desc": {
+      "pl": "Rendery 3D zostały przez nas przygotowane na potrzeby kampanii promocyjnej w całej Polsce. Założeniem projektu było ukazanie w zależności od rodzaju prezentowanego piwa słód, chmiel oraz miód w wirze źródlanej wody. W tym celu przygotowaliśmy modele 3D butelek piwa, oraz wygenerowaliśmy splashe wody w które to opletliśmy butelki.",
+      "en": "Tools used:"
+    },
     "content": [
       { "type": "image", "src": "img/Druk3d-01.jpg" },
-      { "type": "image", "src": "img/Zdjęcie_produktowe Dyfuzor zapachowy AMORA.jpg" },
-      { "type": "image", "src": "design1.jpg" },
-      { "type": "text", "text": "Dodatkowy opis pod galerią" }
+      { "type": "image", "src": "img/portfolio-3D-print-01.jpg" }
     ]
   },
 
@@ -222,6 +226,19 @@
       { "type": "image", "src": "img/portfolio-subaru-06.jpg" },
       { "type": "image", "src": "img/portfolio-subaru-07.jpg" },
       { "type": "youtube", "id": "npxLpAC0Ovs" }
+    ]
+  },
+  "rigging": {
+   "title": {
+      "pl": "Riggowanie",
+      "en": "Rigging"
+    },
+    "desc": {
+      "pl": "",
+      "en": "Tools used:"
+    },
+    "content": [
+      { "type": "youtube", "id": "OmkrSs3cyjI" }
     ]
   }
 }
