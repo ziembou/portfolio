@@ -221,8 +221,8 @@
 
   "subaru-photo": {
    "title": {
-      "pl": "Subaru Forester STI Photo Shots",
-      "en": "Subaru Forester STI"
+      "pl": "Subaru Forester STI - sesja foto",
+      "en": "Subaru Forester STI Photo Shots"
     },
     "desc": {
       "pl": "Wybrane fotografie, wykonane w technice Drone Panning - czyli technice polegającej na przechwyceniu poruszającego się obiektu za pomocą kamery z dłuższym czasem naświetlania. Powstaje przez to iluzja ruchu, prędkości. Technika jest wymagająca pod tym względem, że potrzebna jest synchronizacja ruchu kamery (drona) oraz przedmiotu fotografii (auta w tym przypadku). Stworzenie zdjęcia z poprawną ostrością wymaga sporo prób",
@@ -265,6 +265,19 @@
       { "type": "image", "src": "img/portfolio-huvre-03.jpg" },
       { "type": "image", "src": "img/portfolio-huvre-04.jpg" },
       { "type": "image", "src": "img/portfolio-huvre-05.jpg" }
+    ]
+  },
+  "unreal-configurator": {
+   "title": {
+      "pl": "XTZ 750 - konfigurator w Unreal Engine",
+      "en": "XTZ 750 - Unreal engine configurator"
+    },
+    "desc": {
+      "pl": "Narzędzia użyte: Unreal Engine",
+      "en": "Tools used: Unreal Engine"
+    },
+    "content": [
+      { "type": "youtube", "id": "Z5_T2wdH5-I" }
     ]
   }
 }
