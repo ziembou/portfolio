@@ -6,6 +6,7 @@ let activeProjectId = null;
 const toggle = document.getElementById('aboutToggle');
 const more = document.getElementById('aboutMore');
 const skillFills = document.querySelectorAll('.skill-fill');
+const form = document.getElementById('contactForm');
 
 
 if (toggle && more) {
@@ -147,7 +148,7 @@ $('.gallery').on('click', '.item', function () {
       $('#popupGallery').append(`
         <div class="popup-video">
           <iframe
-            data-src="https://www.youtube.com/embed/${block.id}?autoplay=1&mute=1"
+            data-src="https://www.youtube-nocookie.com/embed/${block.id}?autoplay=1&mute=1"
             frameborder="0"
             allowfullscreen>
           </iframe>
@@ -303,6 +304,11 @@ document.addEventListener("keydown", e => {
   if (e.key === "Escape" && $('#projectPopup').hasClass('active')) {
     closePopup();
   }
+
+  if (e.key === "Escape" && $('#contactPopup').hasClass('active')) {
+    closeContact();
+    return;
+  }
 });
 
 window.addEventListener('popstate', () => {
@@ -311,3 +317,71 @@ window.addEventListener('popstate', () => {
   }
 });
 
+function openContact() {
+  resetContactForm(); // 🔥 ZAWSZE NA START
+  history.pushState({ contact: true }, '');
+  document.body.classList.add('popup-open');
+  document.getElementById('contactPopup').classList.add('active');
+}
+
+function closeContact() {
+  document.body.classList.remove('popup-open');
+  document.getElementById('contactPopup').classList.remove('active');
+
+  if (history.state?.contact) {
+    history.back();
+  }
+
+  resetContactForm();
+}
+
+function resetContactForm() {
+  const popup = document.getElementById('contactPopup');
+  const form = document.getElementById('contactForm');
+
+  if (!popup || !form) return;
+
+  popup.classList.remove('sent'); // 🔥 KLUCZ
+  form.reset();
+}
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+
+  const res = await fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { Accept: 'application/json' }
+  });
+
+  if (res.ok) {
+    const popup = document.getElementById('contactPopup');
+
+    popup.classList.add('sent');
+    form.reset();
+
+    // ⏳ auto-close po 2.8s
+    setTimeout(() => {
+      closeContact();
+    }, 2800);
+  }
+});
+
+document.querySelector('.nav-contact').addEventListener('click', e => {
+  e.preventDefault();
+  openContact();
+});
+
+document
+  .querySelector('#contactPopup .popup-close')
+  .addEventListener('click', closeContact);
+
+document.querySelector('#contactPopup').addEventListener('click', e => {
+  if (e.target.id === 'contactPopup') closeContact();
+});
+
+window.addEventListener('popstate', () => {
+  if (document.getElementById('contactPopup').classList.contains('active')) {
+    closeContact();
+  }
+});

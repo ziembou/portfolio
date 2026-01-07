@@ -11,23 +11,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+	<title>Portfolio Marcin Ziemba</title>
 </head>
 <body>
-<!--
-<nav class="main-nav">
-  <div class="nav-inner">
-    <div class="nav-logo">.marcin</div>
-
-    <ul class="nav-links">
-      <li><a href="#portfolio" class="active">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
--->
 <header class="site-header">
   <div class="nav-inner">
     <div class="logo">
@@ -36,7 +22,7 @@
     <nav class="nav">
       <a href="#portfolio" data-i18n="menu.projects"></a>
       <a href="#about"  data-i18n="menu.about"></a>
-      <a href="#contact"  data-i18n="menu.contact"></a>
+      <a href="#contact"  data-i18n="menu.contact" class="nav-contact"></a>
       <!--
       <button data-lang="pl">PL</button>
       <button data-lang="en">EN</button>
@@ -69,7 +55,6 @@
   
 </div>
 <section class="about creative" id="about">
-  
   <div class="about-inner">
 	<div class="about-bg-text" data-i18n="background.about"></div>
     <div class="about-image"><img src="img/about-me-portrait2.png" alt="Your photo"></div>
@@ -80,9 +65,11 @@
       <p class="about-lead" data-i18n="about.subtitle"></p>
 	<div class="about-more" id="aboutMore">
 		<p data-i18n="about.description-more.01" data-i18n-html></p>	 
-		<p data-i18n="about.description-more.02" data-i18n-html></p>	 
-		<p data-i18n="about.description-more.04" data-i18n-html></p>
+		<p data-i18n="about.description-more.02" data-i18n-html></p>	
+		<p data-i18n="about.description-more.06" data-i18n-html></p>	
+		<p data-i18n="about.description-more.07" data-i18n-html></p>
 		<p data-i18n="about.description-more.03" data-i18n-html></p>
+		<p data-i18n="about.description-more.04" data-i18n-html></p>
 <!-- SKILLS RADIAL-->
 			<div class="skills-radial">
 				<div class="skill-circle" data-percent="85">
@@ -92,7 +79,7 @@
 					</svg>
 					<div class="skill-label">
 					<strong>Blender</strong>
-					<span>Advanced</span>
+					<span data-i18n="skills-level.advanced"></span>
 					</div>
 				</div>
 				<div class="skill-circle" data-percent="45">
@@ -102,7 +89,7 @@
 					</svg>
 					<div class="skill-label">
 					<strong>Unreal Engine</strong>
-					<span>Intermediate</span>
+					<span data-i18n="skills-level.intermediate"></span>
 					</div>
 				</div>
 				<div class="skill-circle" data-percent="50">
@@ -112,7 +99,7 @@
 					</svg>
 					<div class="skill-label">
 					<strong>Plasticity (CAD)</strong>
-					<span>Intermediate</span>
+					<span data-i18n="skills-level.intermediate"></span>
 					</div>
 				</div>
 				<div class="skill-circle" data-percent="25">
@@ -122,7 +109,7 @@
 					</svg>
 					<div class="skill-label">
 					<strong>Rhino 3D</strong>
-					<span>Beginner</span>
+					<span data-i18n="skills-level.beginner"></span>
 					</div>
 				</div>
 				<div class="skill-circle" data-percent="75">
@@ -132,7 +119,7 @@
 					</svg>
 					<div class="skill-label">
 					<strong>3dsMax</strong>
-					<span>Beginner	</span>
+					<span data-i18n="skills-level.advanced"></span>
 					</div>
 				</div>
 				<div class="skill-circle" data-percent="55">
@@ -142,7 +129,7 @@
 					</svg>
 					<div class="skill-label">
 					<strong>After Effects</strong>
-					<span>Intermediate</span>
+					<span data-i18n="skills-level.intermediate"></span>
 					</div>
 				</div>
 		    </div> <!-- END SKILLS RADIAL-->
@@ -154,8 +141,8 @@
 				<circle class="progress" cx="60" cy="60" r="52"/>
 				</svg>
 				<div class="skill-label">
-				<strong>Modelling 3D</strong>
-				<span>Expert</span>
+				<strong data-i18n="skills.modelling3d"></strong>
+				<span data-i18n="skills-level.expert"></span>
 				</div>
 			</div>
 			<div class="skill-circle" data-percent="65">
@@ -164,8 +151,8 @@
 				<circle class="progress" cx="60" cy="60" r="52"/>
 				</svg>
 				<div class="skill-label">
-				<strong>Animation</strong>
-				<span>Intermediate</span>
+				<strong data-i18n="skills.animation"></strong>
+				<span data-i18n="skills-level.intermediate"></span>
 				</div>
 			</div>
 			<div class="skill-circle" data-percent="60">
@@ -174,8 +161,8 @@
 				<circle class="progress" cx="60" cy="60" r="52"/>
 				</svg>
 				<div class="skill-label">
-				<strong>Rigging</strong>
-				<span>Intermediate</span>
+				<strong data-i18n="skills.rigging"></strong>
+				<span data-i18n="skills-level.intermediate"></span>
 				</div>
 			</div>
 			<div class="skill-circle" data-percent="80">
@@ -184,8 +171,28 @@
 				<circle class="progress" cx="60" cy="60" r="52"/>
 				</svg>
 				<div class="skill-label">
-				<strong>Lighting/Rendering</strong>
-				<span>Professional</span>
+				<strong data-i18n="skills.lighting-rendering"></strong>
+				<span data-i18n="skills-level.advanced"></span>
+				</div>
+			</div>
+			<div class="skill-circle" data-percent="65">
+				<svg viewBox="0 0 120 120">
+				<circle class="bg" cx="60" cy="60" r="52"/>
+				<circle class="progress" cx="60" cy="60" r="52"/>
+				</svg>
+				<div class="skill-label">
+				<strong data-i18n="skills.print-3d"></strong>
+				<span data-i18n="skills-level.intermediate"></span>
+				</div>
+			</div>
+			<div class="skill-circle" data-percent="45">
+				<svg viewBox="0 0 120 120">
+				<circle class="bg" cx="60" cy="60" r="52"/>
+				<circle class="progress" cx="60" cy="60" r="52"/>
+				</svg>
+				<div class="skill-label">
+				<strong data-i18n="skills.vr"></strong>
+				<span data-i18n="skills-level.beginner"></span>
 				</div>
 			</div>
 		</div>
@@ -340,7 +347,7 @@
 				</div>
 			</div>
       <div class="item print3d" data-project-id="druk-3d">
-				<img src="img/portfolio-3D-print-01.jpg" alt="Fresso cosmetics">
+				<img src="img/portfolio-3D-print-03.jpg" alt="Fresso cosmetics">
 				<div class="overlay">
 					<a href="javascript:void(0)" class="open-project">3D Print</a>
 				</div>
@@ -348,16 +355,22 @@
       <div class="item rigging" data-project-id="rigging">
 				<img src="img/thumb-rigging-01.jpg" alt="Riggowanie">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project">3D Print</a>
+					<a href="javascript:void(0)" class="open-project">Rigging</a>
+				</div>
+			</div>
+      <div class="item rendering" data-project-id="huvre">
+				<img src="img/portfolio-huvre-01.jpg" alt="Huvre">
+				<div class="overlay">
+					<a href="javascript:void(0)" class="open-project">Huvre</a>
 				</div>
 			</div>
 	</div>
-
 	</main>
 
 </section>
+<!-- POPUP -->
 <div id="projectPopup" class="project-popup">
-  <div class="popup-inner">
+  <div class="popup-inner">	
 
     <button class="popup-close" aria-label="Close">×</button>
 
@@ -370,6 +383,46 @@
   </div>
 </div>
 
+<!-- CONTACT FORM-->
+<div id="contactPopup" class="contact-popup">
+  <div class="contact-inner">
+    <button class="popup-close" aria-label="Close contact form">×</button>
+
+    <header class="contact-header">
+      <h2 data-i18n="contact-form.contact"></h2>
+      <h2 class="letstalk" data-i18n="contact-form.lets-talk" data-i18n-html></h2>
+    </header>
+
+    <form
+      id="contactForm"
+      action="https://formspree.io/f/mykzrkok"
+      method="POST"
+      class="contact-form"
+    >
+      <div class="form-field">
+        <label for="name" data-i18n="contact-form.name"></label>
+        <input id="name" type="text" name="name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="email" data-i18n="contact-form.email"></label>
+        <input id="email" type="email" name="email" required>
+      </div>
+
+      <div class="form-field">
+        <label for="message" data-i18n="contact-form.message"></label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="form-submit" data-i18n="contact-form.submit"></button>
+    </form>
+
+    <div class="form-success">
+      <h3 data-i18n="contact-form.thanks"></h3>
+      <p data-i18n="contact-form.illbeback"></p>
+    </div>
+  </div>
+</div>
 
 
 <footer class="site-footer" id="contact">
@@ -377,7 +430,7 @@
 
     <div class="footer-col">
       <h3 data-i18n="website.footer.contact"></h3>
-      <p><b>e-mail: </b><a href="mailto:kontakt@email.com">ziembou@gmail.com</a></p>
+      <p><b>e-mail: </b><a href="mailto:ziembou@gmail.com">ziembou@gmail.com</a></p>
       <p>Location: Poland</p>
     </div>
 
@@ -394,10 +447,7 @@
 
     <div class="footer-col">
       <h3 data-i18n="website.footer.about">About</h3>
-      <p>
-        Portfolio showcasing design & development projects.
-        Built with HTML, CSS, JS. Author: <b>Marcin Ziemba</b>
-      </p>
+      <p data-i18n="website.footer.author" data-i18n-html></p>
     </div>
 
   </div>
@@ -520,10 +570,6 @@ $('.filter-more').on('click', function (e) {
 $('.more-toggle').on('click', function (e) {
   e.stopPropagation();
 });
-
-
-
-
 
 </script>
 </body>

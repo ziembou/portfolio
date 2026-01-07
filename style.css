@@ -549,6 +549,8 @@ div.gallery .item:hover img{
   padding: 20px;
 
   position: relative;
+
+  padding-top: clamp(32px, 6vh, 72px);
 }
 .popup-scroll {
   max-height: 95vh;
@@ -612,7 +614,7 @@ div.gallery .item:hover img{
 
 /*POPRAWIC*/
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .popup-close {
     right: 16px;
     top: 16px;
@@ -1166,3 +1168,132 @@ body.popup-open {
 .label.left { left: 1rem; }
 .label.right { right: 1rem; }
 
+.contact-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+
+.contact-popup.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contact-inner {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 36px;
+  position: relative;
+}
+
+.contact-header {
+  margin-bottom: 32px;
+}
+
+.contact-header h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.letstalk {
+  color: #b7b7b7;
+}
+
+.contact-header p {
+  opacity: 0.7;
+  font-size: 0.95rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px; /* 🔑 równy odstęp między polami */
+}
+
+.contact-popup.active .contact-inner {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+@media (max-width: 480px) {
+  .contact-inner {
+    padding: 32px 24px;
+    border-radius: 14px;
+  }
+
+  .contact-header h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#contactPopup.sent .contact-form {
+  display: none;
+}
+
+#contactPopup.sent .form-success {
+  display: block;
+}
+
+.popup-open .site-content {
+  filter: blur(4px);
+  transition: filter 0.3s ease;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 6px;
+}
+
+.form-field textarea {
+  min-height: 160px; /* 🔥 klucz */
+  resize: vertical; /* user może powiększyć */
+  line-height: 1.6;
+}
+
+.form-field input,
+.form-field textarea {
+  background-color: #d4d4d449;
+  height: auto;
+  padding: 12px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,.25);
+  color: #000;
+  font-size: 0.95rem;
+}
+
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+
+.form-submit {
+  margin-top: 12px;
+  padding: 14px;
+  background: var(--accent);
+  color: #000;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}

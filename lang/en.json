@@ -12,6 +12,20 @@
     "about": "About",
     "contact": "Contact"
   },
+  "skills": {
+    "modelling3d": "3D modelling",
+    "animation": "3D animation",
+    "rigging": "rigging",
+    "lighting-rendering": "lighting/rendering",
+    "print-3d": "3D printing",
+    "vr": "vr"
+  },
+  "skills-level": {
+    "beginner": "beginner",
+    "intermediate": "intermediate",
+    "advanced": "advanced",
+    "expert": "expert"
+  },
   "portfolio": {
     "seemore": "see more",
     "seeless": "see less"
@@ -24,25 +38,37 @@
   },
   "about": {
     "title": "Hello!",
-    "subtitle": "My name is Marcin. I've been working professionally with 3D graphics for over 17 years. I specialize in 3D graphics. If you'd like to learn more about my specific areas, please click the button below and check out my portfolio!",
+    "subtitle": "Nazywam się Marcin. Grafiką 3D zawodowo zajmuję się od ponad 17 lat. Specjalizuję się w grafice 3D. Zapraszam do zapoznania się z notką o mnie oraz moim portfolio!",
     "description-more": {
-      "01": "I graduated from the <b>University of Information Technology and Management</b> in Rzeszów, where I majored in Computer Graphics and Animation, and completed postgraduate studies in Software Engineering. This combination allows me to move freely between the artistic and technical worlds.",
-      "02": "<p>For a long time, I worked as a freelancer, collaborating on a variety of projects—from 3D visualizations and animations to elements used in games and interactive applications. I'm most comfortable with the role of a Tech Artist. I enjoy creating 3D models with an emphasis on: clean and optimized topology, attention to detail, and proper asset preparation for subsequent production stages.",
-      "03": "<br><b>Software knowledge",
-      "04": "<br>Proficiency levels are presented as simple graphs. This is a subjective assessment of my experience and comfort with the software, not a rigid percentage—learning in 3D never ends.",
-      "05": "<br><b>Technical skills"
-  
+      "01": "I am a graduate of the University of Information Technology and Management in Rzeszów, where I completed a degree in Computer Graphics and Animation, as well as postgraduate studies in Software Engineering.",
+      "02": "<br><p>I create 3D models with an emphasis on: clean and optimized topology, attention to detail, and proper asset preparation for subsequent production stages. I have experience working with 3D object scanning and 3D printing.",
+      "03": "<br><b>Experience",
+      "04": "<br><p>Below is a subjective assessment of my experience and comfort in working with a given software, not a rigid percentage measure - learning in 3D never ends.",
+      "05": "<br><b>Technical skills",
+      "06": "<br><b>What I enjoy working on?",
+      "07": "<br><b>Automotive</b> is one of my favorite areas of 3D work, where I can fully utilize my modeling, rigging, animation, and rendering skills."
     }
   },
   "links": {
-    "seemore": "See more",
+    "seemore": "more about me",
     "seeless": "See less"
   },
   "website": {
    "footer": {
      "contact": "Contact",
      "about": "About",
-     "social": "Social"
+     "social": "Social",
+     "author": "Portfolio showcasing design & development projects.<br>Built with HTML, CSS, JS. Author: <b>Marcin Ziemba</b>"
    }
+  },
+  "contact-form": {
+    "contact": "Contact",
+    "name": "name",
+    "email": "e-mail",
+    "message": "message",
+    "submit": "Submit",
+    "thanks": "Thanks 👋",
+    "illbeback": "I’ll get back to you soon.",
+    "lets-talk": "<br>Lets talk!" 
   }
 }

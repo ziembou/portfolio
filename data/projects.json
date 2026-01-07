@@ -1,7 +1,13 @@
 {
   "xtz-750-engine": {
-    "title": "XTZ 750 engine",
-    "desc": "Tools used: Blender 3D, Plasticity (CAD)",
+    "title": {
+      "pl": "silnik Yamaha XTZ 750 ",
+      "en": "Yamaha XTZ 750 - engine"
+    },
+    "desc": {
+      "pl": "użyte narzędzia: Plasticity, Blender",
+      "en": "Tools used: Plasticity, Blender"
+    },
     "content": [
       { "type": "image", "src": "img/SILNIK-02.jpg" },
       { "type": "image", "src": "img/xtz-750-02.jpg" },
@@ -46,8 +52,8 @@
       "en": "Boston Sofa - leather furniture showroom"
     },
     "desc": {
-      "pl": "Dla klienta przygotowane zostały modele 3D mebli skórzanych w wariacjach jedno, dwu i trzy-osobowych. Całość wykonana w Blender 3D oraz Marmoset Toolbag. Modelowanie odbywało się na skanie 3D fotela (Lidar), co poskutkowało idealnymi proporcjami i kształtem fotela. Priorytetem była dbałość o szczegóły oraz poprawną topologię siatki",
-      "en": "Project description"
+      "pl": "Modele 3D mebli skórzanych w wariacjach jedno, dwu i trzy-osobowych. Całość wykonana w Blender 3D oraz Marmoset Toolbag. Modelowanie odbywało się na skanie 3D fotela (Lidar), co poskutkowało idealnymi proporcjami i kształtem fotela. Priorytetem była dbałość o szczegóły oraz poprawną topologię siatki",
+      "en": "3D models of leather furniture in single, two, and three-seater variations. The entire piece was created in Blender 3D and Marmoset Toolbag. Modeling was performed using a 3D scan of the chair (Lidar), resulting in the chair's perfect proportions and shape. Attention to detail and correct mesh topology were paramount."
     },
     "content": [
       { "type": "image", "src": "img/Boston_01.jpg" },
@@ -69,8 +75,8 @@
       "en": "Abandoned Rzeszów"
     },
     "desc": {
-      "pl": "Prywatny projekt, mający na celu edukację w Unreal Engine ",
-      "en": "Project description"
+      "pl": "Użyte narzędzia: Unreal Engine",
+      "en": "Tools used: Unreal Engine"
     },
     "content": [
       { "type": "image", "src": "img/Abandoned-01.jpg" },
@@ -84,7 +90,7 @@
   "tvp-abc": {
     "title": {
       "pl": "Nowa oprawa graficzna TVP abc",
-      "en": "jingles for tv station TVP abc"
+      "en": "Jingles for tv station TVP abc"
     },
     "desc": {
       "pl": "Animowane jingle dla TVP ABC ",
@@ -107,8 +113,8 @@
       "en": "Fresso - cosmetics"
     },
     "desc": {
-      "pl": "Opis projektu…",
-      "en": "Project description"
+      "pl": "Użyte narzędzia: Blender 3D",
+      "en": "Tools used: Blender 3D"
     },
     "content": [
       { "type": "image", "src": "img/portfolio-fresso-01.jpg" },
@@ -124,23 +130,25 @@
       "en": "Quantuum product renderings"
     },
     "desc": {
-      "pl": "Wykonaliśmy modele 3D produktów, oraz serię renderów / wizualizacji produktów na białym tle wraz z kanałem alfa pod materiały reklamowe. Rendery zostały wykonane w wysokiej rozdzielczości, aby można je było dowolnie cropować i dostosowywać pod banery reklamowe. ",
-      "en": "Project description"
+      "pl": "Seria renderów / wizualizacji produktów pod materiały reklamowe. Narzędzia użyte: Blender 3D",
+      "en": "A series of product renders/visualizations for advertising materials. Tools used: Blender 3D"
     },
     "content": [
       { "type": "image", "src": "img/portfolio-quantuum-01.jpg" },
-      { "type": "image", "src": "img/portfolio-quantuum-02.jpg" }
+      { "type": "image", "src": "img/portfolio-quantuum-03.jpg" },
+      { "type": "image", "src": "img/portfolio-quantuum-04.jpg" },
+      { "type": "image", "src": "img/portfolio-quantuum-05.jpg" }
     ]
   },
 
   "lomza": {
     "title": {
       "pl": "Łomża",
-      "en": "Loooomza"
+      "en": "Łomża"
     },
     "desc": {
-      "pl": "Rendery 3D zostały przez nas przygotowane na potrzeby kampanii promocyjnej w całej Polsce. Założeniem projektu było ukazanie w zależności od rodzaju prezentowanego piwa słód, chmiel oraz miód w wirze źródlanej wody. W tym celu przygotowaliśmy modele 3D butelek piwa, oraz wygenerowaliśmy splashe wody w które to opletliśmy butelki.",
-      "en": "Tools used:"
+      "pl": "Celem projektu było ukazanie w zależności od rodzaju prezentowanego piwa słód, chmiel oraz miód w wirze źródlanej wody. W tym celu przygotowane zostały modele 3D butelek piwa, oraz wygenerowane splashe wody w które to opletliśmy butelki.",
+      "en": "The goal of the project was to depict malt, hops, and honey in a vortex of spring water, depending on the type of beer being presented. To achieve this, 3D models of beer bottles were created and water splashes were generated, which we then wrapped around the bottles."
     },
     "content": [
       { "type": "image", "src": "img/portfolio-lomza-01.jpg" },
@@ -167,8 +175,8 @@
       "en": "Animated jingles for Alfa TVP"
     },
     "desc": {
-      "pl": "d",
-      "en": ""
+      "pl": "Seria animowanych czołówek dla stacji telewizyjnej dla nastolatków. Narzędzia użyte: Blender 3D, Adobe After Effects",
+      "en": "A series of animated openings for a teen television station. Tools used: Blender 3D, Adobe After Effects"
     },
     "content": [
       { "type": "image", "src": "img/portfolio-alfa-01.jpg" },
@@ -186,23 +194,24 @@
       "en": "3D Print"
     },
     "desc": {
-      "pl": "Rendery 3D zostały przez nas przygotowane na potrzeby kampanii promocyjnej w całej Polsce. Założeniem projektu było ukazanie w zależności od rodzaju prezentowanego piwa słód, chmiel oraz miód w wirze źródlanej wody. W tym celu przygotowaliśmy modele 3D butelek piwa, oraz wygenerowaliśmy splashe wody w które to opletliśmy butelki.",
-      "en": "Tools used:"
+      "pl": "Jednym z projektów wykorzystujących druk 3D było zaprojektowanie oraz wydrukowanie mocowania typu „retrofit” do świateł w starszym samochodzie.",
+      "en": "One of the projects using 3D printing was to design and print a retrofit mount for the lights in an older car."
     },
     "content": [
-      { "type": "image", "src": "img/Druk3d-01.jpg" },
-      { "type": "image", "src": "img/portfolio-3D-print-01.jpg" }
+      { "type": "image", "src": "img/portfolio-3D-print-03.jpg" },
+      { "type": "image", "src": "img/portfolio-3D-print-04.jpg" },
+      { "type": "image", "src": "img/portfolio-3D-print-05.jpg" }
     ]
   },
 
   "tvp-zwierzaki": {
     "title": {
       "pl": "Zwierzaki czytaki",
-      "en": ""
+      "en": "Zwierzaki czytaki"
     },
     "desc": {
-      "pl": "Byliśmy odpowiedzialni za stworzenie animowanej czołówki, w której nadaliśmy literom wygląd i zachowanie niesfornych zwierzaków, bawiących się z książkami. Przygotowaliśmy wyjątkowe postacie w 3D, które są jednocześnie literami alfabetu. Każda z nich to inny zwierzak o charakterystycznych cechach.",
-      "en": "Tools used:"
+      "pl": "Animowana czołówka, która nadaje literom wygląd i zachowanie niesfornych zwierzaków, bawiących się z książkami.Kreacja postaci w 3D, które są jednocześnie literami alfabetu. Każda z nich to inny zwierzak o charakterystycznych cechach.",
+      "en": "An animated opening sequence that gives the letters the appearance and behavior of naughty animals playing with books. Creation of 3D characters who are also letters of the alphabet. Each character is a different animal with distinctive features."
     },
     "content": [
       { "type": "youtube", "id": "4LEHF6KFZS0" },
@@ -217,14 +226,14 @@
     },
     "desc": {
       "pl": "Wybrane fotografie, wykonane w technice Drone Panning - czyli technice polegającej na przechwyceniu poruszającego się obiektu za pomocą kamery z dłuższym czasem naświetlania. Powstaje przez to iluzja ruchu, prędkości. Technika jest wymagająca pod tym względem, że potrzebna jest synchronizacja ruchu kamery (drona) oraz przedmiotu fotografii (auta w tym przypadku). Stworzenie zdjęcia z poprawną ostrością wymaga sporo prób",
-      "en": "Tools used:"
+      "en": "Selected photographs taken using drone panning—a technique that captures a moving object with a camera using a longer exposure time. This creates the illusion of movement and speed. The technique is demanding in that it requires synchronization between the camera (drone) and the subject (in this case, the car). Creating a photo with the correct focus requires numerous attempts."
     },
     "content": [
-      { "type": "image", "src": "img/portfolio-subaru-03.jpg" },
-      { "type": "image", "src": "img/portfolio-subaru-04.jpg" },
-      { "type": "image", "src": "img/portfolio-subaru-02.jpg" },
-      { "type": "image", "src": "img/portfolio-subaru-06.jpg" },
-      { "type": "image", "src": "img/portfolio-subaru-07.jpg" },
+      { "type": "image", "src": "img/portfolio-Subaru-03.jpg" },
+      { "type": "image", "src": "img/portfolio-Subaru-04.jpg" },
+      { "type": "image", "src": "img/portfolio-Subaru-02.jpg" },
+      { "type": "image", "src": "img/portfolio-Subaru-06.jpg" },
+      { "type": "image", "src": "img/portfolio-Subaru-07.jpg" },
       { "type": "youtube", "id": "npxLpAC0Ovs" }
     ]
   },
@@ -239,6 +248,23 @@
     },
     "content": [
       { "type": "youtube", "id": "OmkrSs3cyjI" }
+    ]
+  },
+  "huvre": {
+   "title": {
+      "pl": "Huvre",
+      "en": "Huvre"
+    },
+    "desc": {
+      "pl": "Narzędzia użyte: 3dsmax",
+      "en": "Tools used: 3dsmax"
+    },
+    "content": [
+      { "type": "image", "src": "img/portfolio-huvre-01.jpg" },
+      { "type": "image", "src": "img/portfolio-huvre-02.jpg" },
+      { "type": "image", "src": "img/portfolio-huvre-03.jpg" },
+      { "type": "image", "src": "img/portfolio-huvre-04.jpg" },
+      { "type": "image", "src": "img/portfolio-huvre-05.jpg" }
     ]
   }
 }
