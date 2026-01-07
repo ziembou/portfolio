@@ -27,8 +27,11 @@
       <button data-lang="pl">PL</button>
       <button data-lang="en">EN</button>
       -->
-      <a href="javascript:void(0)" data-lang="pl">PL</a>
-      <a href="javascript:void(0)" data-lang="en">EN</a>
+	<div class="lang-switch">
+		<button data-lang="pl" class="active">PL</button>
+		<span>/</span>
+		<button data-lang="en">EN</button>
+	</div>
     </nav>
     <button class="burger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -50,7 +53,6 @@
   <div class="hero-text">
     <h1 data-i18n="hero.title"></h1>
     <p data-i18n="hero.subtitle"></p>
-	<p data-i18n="hero.link" data-i18n-html></p>
   </div>
   
 </div>
@@ -287,67 +289,67 @@
 				</div>
 			</div>
       <div class="item cad modelling3d animation unreal" data-project-id="xtz-750-engine">
-				<img src="img/thumb-Silnik-01.jpg" alt="XTZ 750">
+				<img src="img/thumb-Silnik-01.jpg" alt="XTZ 750 engine">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">xtz 750 engine</a>
 				</div>
 			</div>
 			<div class="item rendering modelling3d" data-project-id="boston-sofa">
-				<img src="img/thumb-bostonsofa-01.jpg" alt="XTZ 750">
+				<img src="img/thumb-bostonsofa-01.jpg" alt="boston sofa">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">boston sofa</a>
 				</div>
 			</div>
 			<div class="item animation modelling3d unreal photogrammetry" data-project-id="abandoned">
 				<img src="img/Abandoned-01.jpg" alt="abandonded">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">abandoned</a>
 				</div>
 			</div>
 			<div class="item photography" data-project-id="subaru-photo">
-				<img src="img/thumb-Subaru-01.jpg" alt="XTZ 750">
+				<img src="img/thumb-Subaru-01.jpg" alt="subaru forester STI">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">subaru forester sti</a>
 				</div>
 			</div>
       <div class="item rendering" data-project-id="lomza">
 				<img src="img/thumb-lomza-01.jpg" alt="Lomza beer">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">lomza beer</a>
 				</div>
 			</div>
       <div class="item rendering" data-project-id="fresso-home">
 				<img src="img/thumb-fresso-01.jpg" alt="Fresso cosmetics">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">fresso</a>
 				</div>
 			</div>
       <div class="item animation" data-project-id="alfa">
 				<img src="img/thumb-alfa-01.jpg" alt="Tvp alfa">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">alfa tvp</a>
 				</div>
 			</div>
       <div class="item rendering" data-project-id="tvp-abc">
-				<img src="img/portfolio-tvp-abc-04.jpg" alt="Fresso cosmetics">
+				<img src="img/portfolio-tvp-abc-04.jpg" alt="Tvp abc">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">Tvp abc</a>
 				</div>
 			</div>
       <div class="item rendering modelling3d" data-project-id="quantuum">
 				<img src="img/portfolio-quantuum-01.jpg" alt="Quantuum">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">Quantuum</a>
 				</div>
 			</div>
       <div class="item animation" data-project-id="tvp-zwierzaki">
-				<img src="img/tvp-zwierzaki-czytaki-01.jpg" alt="Fresso cosmetics">
+				<img src="img/tvp-zwierzaki-czytaki-01.jpg" alt="tvp zwierzaki">
 				<div class="overlay">
-					<a href="javascript:void(0)" class="open-project" data-i18n="portfolio.seemore"></a>
+					<a href="javascript:void(0)" class="open-project">Zwierzaki czytaki</a>
 				</div>
 			</div>
       <div class="item print3d" data-project-id="druk-3d">
-				<img src="img/portfolio-3D-print-03.jpg" alt="Fresso cosmetics">
+				<img src="img/portfolio-3D-print-03.jpg" alt="3d print">
 				<div class="overlay">
 					<a href="javascript:void(0)" class="open-project">3D Print</a>
 				</div>
@@ -444,10 +446,9 @@
         <a href="https://www.behance.net/ziembou" aria-label="behance"><i class="fab fa-behance"></i></a>
       </div>
     </div>
-
     <div class="footer-col">
-      <h3 data-i18n="website.footer.about">About</h3>
-      <p data-i18n="website.footer.author" data-i18n-html></p>
+      <h3 data-i18n="website.footer.about"></h3>
+      <span data-i18n="website.footer.author" data-i18n-html></span>
     </div>
 
   </div>

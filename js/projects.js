@@ -86,6 +86,8 @@ if (toggle && more) {
 $('[data-lang]').on('click', function () {
   LANG = $(this).data('lang');
   localStorage.setItem('lang', LANG);
+  $('[data-lang]').removeClass('active');
+  $(this).addClass('active');
 
   window.loadLang(LANG);
 

@@ -151,14 +151,14 @@
       "en": "The goal of the project was to depict malt, hops, and honey in a vortex of spring water, depending on the type of beer being presented. To achieve this, 3D models of beer bottles were created and water splashes were generated, which we then wrapped around the bottles."
     },
     "content": [
-      { "type": "image", "src": "img/portfolio-lomza-01.jpg" },
-      { "type": "image", "src": "img/portfolio-lomza-02.jpg" },
-      { "type": "image", "src": "img/portfolio-lomza-03.jpg" },
-      { "type": "image", "src": "img/portfolio-lomza-04.jpg" },
-      { "type": "image", "src": "img/portfolio-lomza-05.jpg" },
-      { "type": "image", "src": "img/portfolio-lomza-06.jpg" },
-      { "type": "image", "src": "img/portfolio-lomza-07.jpg" },
-      { "type": "image", "src": "img/portfolio-lomza-08.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-01.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-02.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-03.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-04.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-05.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-06.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-07.jpg" },
+      { "type": "image", "src": "img/portfolio-Lomza-08.jpg" },
       { "type": "text", "text": {
           "pl": "Dodatkowy opis pod galerią",
           "en": "english text below"

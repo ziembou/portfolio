@@ -1,8 +1,7 @@
 {
   "hero": {
     "title": "Grafika 3D i animacja",
-    "subtitle": "Grafika 3D, Animacja, Riggowanie",
-    "link": "Zobacz"
+    "subtitle": "Grafika 3D, Animacja, Riggowanie"
   },
   "background": {
     "about": "o mnie",
@@ -43,12 +42,12 @@
     "subtitle": "Nazywam się Marcin. Grafiką 3D zawodowo zajmuję się od ponad 17 lat. Specjalizuję się w grafice 3D. Zapraszam do zapoznania się z notką o mnie oraz moim portfolio!",
     "description-more": {
       "01": "Jestem absolwentem <b>Wyższej Szkoły Informatyki i Zarządzania w Rzeszowie</b>, gdzie ukończyłem kierunek Grafika i Animacja Komputerowa, a także studia podyplomowe na kierunku <b>Inżynieria Oprogramowania</b>.",
-      "02": "<br><p>Tworzę modele 3D z naciskiem na: czystą i zoptymalizowaną topologię dbałość o detale poprawne przygotowanie assetów pod dalsze etapy produkcji. Mam doświadczenie z pracą na <b>skanach 3D </b>obiektów oraz <b>drukiem 3D</b>. ",
+      "02": "<p>Tworzę modele 3D z naciskiem na: czystą i zoptymalizowaną topologię dbałość o detale poprawne przygotowanie assetów pod dalsze etapy produkcji. Mam doświadczenie z pracą na <b>skanach 3D </b>obiektów oraz <b>drukiem 3D</b>. ",
       "03": "<br><b>Doświadczenie",
-      "04": "<br><p>Poniżej subiektywna ocena mojego doświadczenia i komfortu pracy w danym oprogramowaniu, a nie sztywna miara procentowa — nauka w 3D nigdy się nie kończy.",
+      "04": "<p>Poniżej subiektywna ocena mojego doświadczenia i komfortu pracy w danym oprogramowaniu, a nie sztywna miara procentowa — nauka w 3D nigdy się nie kończy.",
       "05": "<br><b>Umiejętności techniczne",
       "06": "<br><b>Nad czym lubię pracować?",
-      "07": "<br>Motoryzacja to jeden z moich ulubionych obszarów pracy w 3D, gdzie mogę w pełni wykorzystać umiejętności modelowania, rigowania, animacji i renderingu."
+      "07": "<p>Motoryzacja to jeden z moich ulubionych obszarów pracy w 3D, gdzie mogę w pełni wykorzystać umiejętności modelowania, rigowania, animacji i renderingu."
     }
   },
   "links": {
@@ -59,8 +58,8 @@
     "footer": {
       "contact": "Kontakt",
       "about": "O mnie",
-      "social": "Socjale",
-      "author": "Portfolio pokazujące<br>Built with HTML, CSS, JS. Author: <b>Marcin Ziemba</b>"
+      "social": "Socjal media",
+      "author": "Projekt i realizacja strony <b>Marcin Ziemba</b>"
     }
   },
   "contact-form": {

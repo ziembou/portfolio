@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Tech Artist & 3D Artist",
-    "subtitle": "Crafting digital worlds, one polygon at a time."
+    "subtitle": "Crafting digital worlds"
   },
   "background": {
     "about": "about",
@@ -58,7 +58,7 @@
      "contact": "Contact",
      "about": "About",
      "social": "Social",
-     "author": "Portfolio showcasing design & development projects.<br>Built with HTML, CSS, JS. Author: <b>Marcin Ziemba</b>"
+     "author": "Design and realisation <b>Marcin Ziemba</b>"
    }
   },
   "contact-form": {
