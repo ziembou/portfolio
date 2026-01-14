@@ -58,6 +58,10 @@ body.hero-killed .hero-text {
    CREATIVE ABOUT
 ========================= */
 
+[data-parallax] {
+  will-change: transform, opacity;
+}
+
 .about.creative {
   position: relative;
   padding: 80px 20px;
@@ -69,7 +73,7 @@ body.hero-killed .hero-text {
 .about-bg-text {
   position: absolute;
   top: 20px;
-  z-index: 1;
+  z-index: 0;
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 0px;
@@ -80,14 +84,14 @@ body.hero-killed .hero-text {
 
 .portfolio-bg-text {
   position: relative;
-  padding-left: 0px;
+  top: 20px;
+  z-index: 0;
   font-size: 100px;
   font-weight: 700;
   letter-spacing: 0px;
-  color: rgba(113, 113, 113, 0.178); /* używa Twojego primary */
+  color: rgba(113, 113, 113, 0.21); /* używa Twojego primary */
   pointer-events: none;
   user-select: none;
-  z-index: 0;
 }
 
 .about-inner {
@@ -102,19 +106,26 @@ body.hero-killed .hero-text {
 }
 
 /* IMAGE */
-.about-image img {
-  position: relative;
-  z-index: 2;
-  width: 100%;
+
+.about-image {
+  overflow: hidden;
 }
 
-/* TEXT */
+.about-image img {
+  width: 100%;
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  transition: transform 0.1s linear, opacity 0.1s linear;
+  will-change: transform, filter, opacity;
+}
+
+/* TEXT HELLO*/
 .about-content h2 {
   color: #b7b7b7;
   font-size: 56px;
   line-height: 1.1;
   margin-bottom: 25px;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .about-content h2 span {
@@ -644,19 +655,6 @@ body.popup-open {
   width:100%;
   margin-bottom:30px;
   border-radius: 10px;
-}
-
-.popup-video{
-  position:relative;
-  padding-top:56.25%;
-  margin-bottom:40px;
-}
-
-.popup-video iframe{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
 }
 
 .popup-text{
@@ -1331,4 +1329,115 @@ body.popup-open {
   border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
+}
+
+.cookie-notice {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  max-width: 320px;
+  padding: 14px 16px;
+  background: rgba(0, 0, 0, 0.495);
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  z-index: 9999;
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.cookie-notice.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.cookie-notice a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.cookie-notice button {
+  background: var(--accent);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.popup-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.popup-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.popup-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-play {
+  position: relative;
+  z-index: 2;
+  font-size: 64px;
+  background: rgba(0,0,0,0.55);
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* klik przechodzi na wrapper */
+}
+
+.video-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;     /* pion */
+  justify-content: center; /* poziom */
+  cursor: pointer;
+}
+
+.video-placeholder img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 🔥 */
+  filter: blur(0.5px) contrast(1.05) saturate(1.05);
+  transform: scale(1.02); /* maskuje artefakty */
+}
+
+.video-placeholder:hover .video-play {
+  transform: scale(1.1);
+  background: rgba(0,0,0,0.7);
+}
+
+.video-play {
+  transition: transform .2s ease, background .2s ease;
 }

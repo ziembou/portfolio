@@ -71,5 +71,9 @@
     "thanks": "Dziękuję 👋",
     "illbeback": "Postaram się odpowiedzieć jak najszybciej!",
     "lets-talk": "<br>Porozmawiajmy!"
+  },
+  "cookies-info": {
+    "text": "Ta strona używa plików cookies wyłącznie do podstawowego działania. Osadzone filmy YouTube mogą zapisywać cookies dopiero po kliknięciu „Odtwórz”. <a href=\"privacy/privacy.html\">Dowiedz się więcej</a>",
+    "ok": "OK"
   }
 }

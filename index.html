@@ -58,8 +58,26 @@
 </div>
 <section class="about creative" id="about">
   <div class="about-inner">
-	<div class="about-bg-text" data-i18n="background.about"></div>
-    <div class="about-image"><img src="img/about-me-portrait2.png" alt="Your photo"></div>
+	<div
+		class="about-bg-text"
+		data-parallax
+		data-x="-140"
+		data-y="20"
+		data-scale="0.15"
+		data-opacity="0.3"
+		data-mobile-x="-60"
+		data-mobile-scale="0.08"
+		data-i18n="background.about">
+	</div>
+    <div
+		class="about-image"
+		data-parallax
+		data-y="-120"
+		data-scale="0.15"
+		data-opacity="0.3"
+	>
+		<img src="img/about-me-portrait4.png" alt="Your photo">
+	</div>
     <div class="about-content">
       <h2 data-i18n="about.title">
         <br>
@@ -242,7 +260,17 @@
 
 <div class="scroll-watcher"></div>
 <section class="portfolio" id="portfolio">
-	<div class="portfolio-bg-text" data-i18n="background.portfolio"></div>
+	<div
+		class="portfolio-bg-text"
+		data-parallax
+		data-x="-140"
+		data-y="20"
+		data-scale="0.15"
+		data-opacity="0.3"
+		data-mobile-x="-60"
+		data-mobile-scale="0.08"
+		data-i18n="background.portfolio">
+	</div>
 	<!--
 	<header class="section-head">
 		<h1>Portfolio</h1>
@@ -448,8 +476,8 @@
         <a href="https://www.youtube.com/@marcin3D-on8nk" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/marcin-ziemba-b87a8111a/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.artstation.com/mruczyslaw" aria-label="artstation"><i class="fab fa-artstation"></i></a>
-        <a href="https://www.behance.net/ziembou" aria-label="behance"><i class="fab fa-behance"></i></a>
+        <!-- <a href="https://www.artstation.com/mruczyslaw" aria-label="artstation"><i class="fab fa-artstation"></i></a>
+        <a href="https://www.behance.net/ziembou" aria-label="behance"><i class="fab fa-behance"></i></a> -->
       </div>
     </div>
     <div class="footer-col">
@@ -462,6 +490,10 @@
   <div class="footer-bottom">
     © 2026 Marcin Ziemba. All rights reserved.
   </div>
+  <div id="cookieNotice" class="cookie-notice">
+	<p data-i18n="cookies-info.text" data-i18n-html></p>
+	<button id="cookieAccept">OK</button>
+  </div>
 </footer>
 
 
@@ -469,6 +501,7 @@
 <!--   *****   JQuery Link   *****   -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script src="js/parallax-anim.js" defer></script>
 <script>
 if (!("ScrollTimeline" in window)) {
   var s = document.createElement("script");
@@ -479,6 +512,7 @@ if (!("ScrollTimeline" in window)) {
 
 <script src="js/i18n.js"></script>
 <script src="js/projects.js"></script>
+
 <!--<script src="js/effects.js"></script> -->
 
 

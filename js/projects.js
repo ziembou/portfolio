@@ -8,6 +8,21 @@ const more = document.getElementById('aboutMore');
 const skillFills = document.querySelectorAll('.skill-fill');
 const form = document.getElementById('contactForm');
 
+const notice = document.getElementById('cookieNotice');
+const accept = document.getElementById('cookieAccept');
+
+
+//COOKIES
+
+if (!localStorage.getItem('cookiesAccepted')) {
+  setTimeout(() => notice.classList.add('show'), 600);
+}
+
+accept.addEventListener('click', () => {
+  localStorage.setItem('cookiesAccepted', 'true');
+  notice.classList.remove('show');
+});
+
 
 if (toggle && more) {
   toggle.addEventListener('click', (e) => { 
@@ -63,8 +78,8 @@ if (toggle && more) {
       skillFills.forEach(bar => bar.style.width = '0');
     }
 
-    if (open && !skillsAnimated) {
-      skillsAnimated = true;
+    if (open) {
+      //skillsAnimated = true;
 
       document.querySelectorAll('.skill-circle').forEach(circle => {
         const percent = circle.dataset.percent;
@@ -149,11 +164,12 @@ $('.gallery').on('click', '.item', function () {
     if (block.type === 'youtube') {
       $('#popupGallery').append(`
         <div class="popup-video">
-          <iframe
-            data-src="https://www.youtube-nocookie.com/embed/${block.id}?autoplay=1&mute=1"
-            frameborder="0"
-            allowfullscreen>
-          </iframe>
+          <div class="video-placeholder" data-video-id="${block.id}">
+            <img 
+              src="https://img.youtube.com/vi/${block.id}/maxresdefault.jpg"
+              alt=""  onerror="this.src='https://img.youtube.com/vi/${block.id}/hqdefault.jpg'">
+            <button class="video-play">▶</button>
+          </div>
         </div>
       `);
     }
@@ -162,7 +178,9 @@ $('.gallery').on('click', '.item', function () {
       renderCompare(block);
     }
 
+
   });
+
 
 function renderCompare(data) {
   const wrapper = document.createElement("div");
@@ -260,15 +278,8 @@ function introAnimation(compare) {
 
 
 
-openPopup();
+  openPopup();
 
-
-  requestAnimationFrame(() => {
-    $('#popupGallery iframe').each(function () {
-      const src = $(this).data('src');
-      if (src) $(this).attr('src', src);
-    });
-  });
 });
 
 function openPopup() {
@@ -387,3 +398,24 @@ window.addEventListener('popstate', () => {
     closeContact();
   }
 });
+
+$('#popupGallery').on('click', '.video-placeholder', function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  const id = $(this).data('video-id');
+  console.log('PLAY VIDEO:', id);
+
+  $(this).replaceWith(`
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&mute=1&playsinline=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  `);
+});
+
+
+
+
