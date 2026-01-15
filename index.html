@@ -53,8 +53,7 @@
   <div class="hero-text">
     <h1 data-i18n="hero.title"></h1>
     <p data-i18n="hero.subtitle"></p>
-  </div>
-  
+  </div>  
 </div>
 <section class="about creative" id="about">
   <div class="about-inner">
@@ -502,6 +501,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script src="js/parallax-anim.js" defer></script>
+/**
+ * Scroll Timeline Polyfill
+ * https://github.com/flackr/scroll-timeline
+ *
+ * Copyright 2019 Google LLC
+ * Licensed under the Apache License, Version 2.0
+ */
 <script>
 if (!("ScrollTimeline" in window)) {
   var s = document.createElement("script");
