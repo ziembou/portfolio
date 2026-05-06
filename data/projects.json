@@ -15,6 +15,7 @@
       { "type": "image", "src": "img/xtz-750-04.jpg" }
     ]
   },
+  
 
   "xtz-750-main": {
     "title": {
@@ -269,15 +270,15 @@
   },
   "unreal-configurator": {
    "title": {
-      "pl": "XTZ 750 - konfigurator w Unreal Engine",
-      "en": "XTZ 750 - Unreal engine configurator"
+      "pl": "XTZ 750 - konfigurator motocykla w Unreal Engine",
+      "en": "XTZ 750 - Unreal engine motorbike configurator"
     },
     "desc": {
-      "pl": "Narzędzia użyte: Unreal Engine",
-      "en": "Tools used: Unreal Engine"
+      "pl": "Narzędzia użyte: Unreal Engine, Blender, Plasticity",
+      "en": "Tools used: Unreal Engine, Blender, Plasticity"
     },
     "content": [
-      { "type": "youtube", "id": "Z5_T2wdH5-I" }
+      { "type": "youtube", "id": "UvCbzj7p0hM" }
     ]
   }
 }
