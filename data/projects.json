@@ -238,6 +238,24 @@
       { "type": "youtube", "id": "npxLpAC0Ovs" }
     ]
   },
+
+   "subaru-grill": {
+   "title": {
+      "pl": "Subaru Druk 3D grill",
+      "en": "Subaru 3D Printed Grill"
+    },
+    "desc": {
+      "pl": "Projekt i druk 3D grilla dla marki subaru. Projekt został wykonany na bazie skanu 3D. Wydruk wymagał podziału modelu na kilka części, aby można było wykonać druk w polu roboczym drukarki. Wykonałem również przygotowanie pod malowanie jak i samo lakierowanie (baza, lakier bezbarwny)",
+      "en": "I designed and 3D printed a grille for a Subaru. The design was based on a 3D scan. Printing required splitting the model into several parts to fit within the printer's build volume. I also handled the surface preparation and the painting process itself (base coat and clear coat)."
+    },
+    "content": [
+      { "type": "image", "src": "img/grill-01.jpg" },
+      { "type": "image", "src": "img/grill-02.jpg" },
+      { "type": "image", "src": "img/grill-03.jpg" },
+      { "type": "image", "src": "img/grill-05.jpg" }
+    ]
+  },
+
   "rigging": {
    "title": {
       "pl": "Riggowanie",
