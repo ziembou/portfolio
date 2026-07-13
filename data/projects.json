@@ -12,7 +12,8 @@
       { "type": "image", "src": "img/SILNIK-02.jpg" },
       { "type": "image", "src": "img/xtz-750-02.jpg" },
       { "type": "image", "src": "img/xtz-750-03.jpg" },
-      { "type": "image", "src": "img/xtz-750-04.jpg" }
+      { "type": "image", "src": "img/xtz-750-04.jpg" },
+      { "type": "youtube", "id": "5igVi85I5ZI" }
     ]
   },
   
@@ -37,6 +38,7 @@
       { "type": "image", "src": "img/portfolio-xtz-750-07.jpg" },
       { "type": "image", "src": "img/portfolio-xtz-750-08.jpg" },
       { "type": "image", "src": "img/portfolio-xtz-750-09.jpg" },
+      { "type": "youtube", "id": "5igVi85I5ZI" },
       {
         "type": "compare",
         "labelLeft": "Wireframe",
@@ -296,7 +298,8 @@
       "en": "Tools used: Unreal Engine, Blender, Plasticity"
     },
     "content": [
-      { "type": "youtube", "id": "UvCbzj7p0hM" }
+      { "type": "youtube", "id": "UvCbzj7p0hM" },
+      { "type": "youtube", "id": "5igVi85I5ZI" }
     ]
   }
 }
